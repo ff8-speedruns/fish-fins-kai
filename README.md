@@ -1,2 +1,5 @@
-# fish-fins-kai
-Kaivel's Fish Fins Manip v2
+# Fish Fin Manipulation Tool
+
+Final Fantasy 8 fish fin manipulation calculator (Kaivel v2 Edition).
+
+[Access the live tool](https://galbadia.garden/fish-fins-kai)
