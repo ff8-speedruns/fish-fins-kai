@@ -74,7 +74,7 @@ function UpdateIndex(pat) {
                         <tr>
                             <th scope="row" id="opening">${row.index}</th>
                             <td id="pat">${row.pattern}</td>
-                            <td id="dmg">${row.globaldamage ? row.globaldamage : ""}</td>
+                            <td id="dmg">${row.globaldamage ? row.globaldamage.replace(' // ', '<br />') : ""}</td>
                             <td id="fish1">${row.manip_1 ? row.manip_1 : ""}</td>
                             <td id="fish1hp">${row.hp1 ? row.hp1 : ""}</td>
                             <td id="fish1atb" class="separator">Skip ${row.skip_1 ? row.skip_1 : ""}</td>
