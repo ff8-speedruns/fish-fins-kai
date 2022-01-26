@@ -16,3 +16,14 @@ body {
 .tab-content {
 	position: relative;
 }
+
+.important {
+	color: #FF0000;
+}
+.atb {
+	color: #FFA500;
+}
+
+.alt {
+	color: #6a0dad;
+}

@@ -69,18 +69,25 @@ function UpdateIndex(pat) {
     idx = vals.filter(element => element.pattern.toLowerCase().replace(/ /g, '').startsWith(pat.toLowerCase()));
 
     var tableRows = "";
+	const bold = /\*(.*)\*/gim
+
     idx.forEach((row) => {
+
+		row.manip_1 = row.manip_1.replace(bold, '<b class="important">$1</b>');
+		row.pattern = row.pattern.replace(bold, '<b class="atb">$1</b>');
+		row.pattern = row.pattern.replace(bold, '<b class="atb">$1</b>');
+
         tableRows += `
                         <tr>
                             <th scope="row" id="opening">${row.index}</th>
                             <td id="pat">${row.pattern}</td>
-                            <td id="dmg">${row.globaldamage ? row.globaldamage.replace(' // ', '<br />') : ""}</td>
                             <td id="fish1">${row.manip_1 ? row.manip_1 : ""}</td>
                             <td id="fish1hp">${row.hp1 ? row.hp1 : ""}</td>
-                            <td id="fish1atb" class="separator">Skip ${row.skip_1 ? row.skip_1 : ""}</td>
-							<td id="fish2">${row.manip_2 ? row.manip_2 : ""}</td>
-                            <td id="fish2hp">${row.hp2 ? row.hp2 : ""}</td>
-                            <td id="fish2atb">Skip ${row.skip_2 ? row.skip_2 : ""}</td>
+                            <td id="fish1atb" class="separator">${row.skip_1 ? row.skip_1 : ""}</td>
+							<td id="fish2">${row.manip_2 ? row.manip_2 : ""}${row.other_manip_2 ? `<br /> <em class="alt">${row.other_manip_2}</em>` : ""}</td>
+                            <td id="fish2hp">${row.hp2 ? row.hp2 : ""}${row.hp3 ? `<br /> <em class="alt">${row.hp3}</em>` : ""}</td>
+                            <td id="fish2atb">${row.skip_2 ? row.skip_2 : ""}${row.other_skip_2 ? `<br /> <em class="alt">${row.other_skip_2}</em>` : ""}</td>
+							<td id="dmg">${row.globaldamage ? row.globaldamage.replace(' // ', '<br />') : ""}</td>
                         </tr>
                         `;
     });
