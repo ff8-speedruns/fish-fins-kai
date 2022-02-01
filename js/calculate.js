@@ -176,8 +176,5 @@ function LimitsBetweenRng(rngStart, rngEnd, currentHp, maxHp) {
 
 // Handling Limit Mode
 limitMode.addEventListener('change', function (e) {
-	Array.from(document.querySelectorAll('.limit')).forEach((el) => {
-		console.log(el.classList.toggle('sup'));
-		console.log("hi");
-	});
+	Array.from(document.querySelectorAll('.limit')).forEach((el) => el.classList.toggle('sup'));
 });
