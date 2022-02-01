@@ -80,55 +80,71 @@ function UpdateIndex(pat) {
 
 	idx.forEach((row) => {
 
-		row.manip_1 = row.manip_1.replace(bold, '<b class="satb">$1</b>');
-		row.manip_2 = row.manip_2.replace(bold, '<b class="satb">$1</b>');
-		row.manip_3 = row.manip_3 ? row.manip_3.replace(bold, '<b class="satb">$1</b>') : "";
-		row.manip_1 = row.manip_1.replace(italic, '<b class="important">$1</b>');
-		row.pattern = row.pattern.replace(italic, '<b class="atb">$1</b>');
-		row.pattern = row.pattern.replace(italic, '<b class="atb">$1</b>');
+		// Manip says RESET if Q HP before battle is lower than Q Global Damage
+		if (qhp.value.length > 0 && (parseInt(qhp.value) - row.globaldamage_q) <= 0) {
+			tableRows += `
+			<tr>
+				<th scope="row" id="opening">${row.index}</th>
+				<td id="pat">${row.pattern}</td>
+				<td id="fish1">RESET</td>
+				<td id="fish1hp"></td>
+				<td id="fish1atb" class="separator"></td>
+				<td id="fish2"></td>
+				<td id="fish2hp"></td>
+				<td id="fish2atb"></td>
+			</tr>
+			`;
+		} else {
+			row.manip_1 = row.manip_1.replace(bold, '<b class="satb">$1</b>');
+			row.manip_2 = row.manip_2.replace(bold, '<b class="satb">$1</b>');
+			row.manip_3 = row.manip_3 ? row.manip_3.replace(bold, '<b class="satb">$1</b>') : "";
+			row.manip_1 = row.manip_1.replace(italic, '<b class="important">$1</b>');
+			row.pattern = row.pattern.replace(italic, '<b class="atb">$1</b>');
+			row.pattern = row.pattern.replace(italic, '<b class="atb">$1</b>');
+	
+			// Calculate limit refreshes.
+			let limitRefreshes1 = 0;
+			let limitRefreshes2 = 0;
+			let limitRefreshes3 = 0;
+			if (qhp.value.length > 0) {
+				qCalcHp = parseInt(qhp.value) - row.globaldamage_q;
+				let rngStart1 = row.rng_start_1 + 1;
+				let rngStart2 = row.rng_start_2 + 1;
+				let rngStart3 = row.rng_start_3 + 1;
+				limitRefreshes1 = LimitsBetweenRng(rngStart1, row.rng_end_1, qCalcHp, 501);
+				limitRefreshes2 = LimitsBetweenRng(rngStart2, row.rng_end_2, qCalcHp, 501);
+				limitRefreshes3 = LimitsBetweenRng(rngStart3, row.rng_end_3, qCalcHp, 501);
+			}
+	
+			limitClass = limitMode.checked ? "" : "sup";
+			refreshClass = limitMode.checked ? "sub" : "";
+	
+			// For future ref: https://sebhastian.com/javascript-double-question-mark/
+			let index = row.index;
+			let pattern = row.pattern;
+			let manip1 = row.manip_1 ?? "";
+			let manip2 = row.manip_2 ?? "";
+			let manip3 = row.manip_3 ?? "";
+			let skip1 = row.skip_1 ? `<span class="${refreshClass}">${row.skip_1}</span>` : "";
+			let skip2 = row.skip_2 ? `<span class="${refreshClass}">${row.skip_2}</span>` : "";
+			let skip3 = row.skip_3 ? `<span class="${refreshClass}">${row.skip_3}</span><br /><span class="limit ${limitClass}">(${limitRefreshes3} Limit)</span>` : "";
+			let hp1 = row.hp1 ? `${row.hp1} (${row.drop1})` : "";
+			let hp2 = row.hp2 ? `${row.hp2} (${row.drop2})` : "";
+			let hp3 = row.hp3 ? `${row.hp3} (${row.drop3})` : "";
 
-		// Calculate limit refreshes.
-		let limitRefreshes1 = 0;
-		let limitRefreshes2 = 0;
-		let limitRefreshes3 = 0;
-		if (qhp.value.length > 0) {
-			qCalcHp = parseInt(qhp.value) - row.globaldamage_q;
-			let rngStart1 = row.rng_start_1 + 1;
-			let rngStart2 = row.rng_start_2 + 1;
-			let rngStart3 = row.rng_start_3 + 1;
-			limitRefreshes1 = LimitsBetweenRng(rngStart1, row.rng_end_1, qCalcHp, 501);
-			limitRefreshes2 = LimitsBetweenRng(rngStart2, row.rng_end_2, qCalcHp, 501);
-			limitRefreshes3 = LimitsBetweenRng(rngStart3, row.rng_end_3, qCalcHp, 501);
+			tableRows += `
+			<tr>
+				<th scope="row" id="opening">${index}</th>
+				<td id="pat">${pattern}</td>
+				<td id="fish1">${manip1}</td>
+				<td id="fish1hp">${hp1}</td>
+				<td id="fish1atb" class="separator"><span class="skips">${skip1}</span><br /><span class="limit ${limitClass}">(${limitRefreshes1} Limit)</span></td>
+				<td id="fish2">${manip2}<br /><em class="alt">${manip3}</em></td>
+				<td id="fish2hp">${hp2}<br /><em class="alt">${hp3}</em></td>
+				<td id="fish2atb">${skip2}<br /><span class="limit ${limitClass}">(${limitRefreshes2} Limit)</span><br /><em class="alt">${skip3}</em></td>
+			</tr>
+			`;
 		}
-
-		limitClass = limitMode.checked ? "" : "sup";
-		refreshClass = limitMode.checked ? "sub" : "";
-
-		// For future ref: https://sebhastian.com/javascript-double-question-mark/
-		let index = row.index;
-		let pattern = row.pattern;
-		let manip1 = row.manip_1 ?? "";
-		let manip2 = row.manip_2 ?? "";
-		let manip3 = row.manip_3 ?? "";
-		let skip1 = row.skip_1 ? `<span class="${refreshClass}">${row.skip_1}</span>` : "";
-		let skip2 = row.skip_2 ? `<span class="${refreshClass}">${row.skip_2}</span>` : "";
-		let skip3 = row.skip_3 ? `<span class="${refreshClass}">${row.skip_3}</span><br /><span class="limit ${limitClass}">(${limitRefreshes3} Limit)</span>` : "";
-		let hp1 = row.hp1 ? `${row.hp1} (${row.drop1})` : "";
-		let hp2 = row.hp2 ? `${row.hp2} (${row.drop2})` : "";
-		let hp3 = row.hp3 ? `${row.hp3} (${row.drop3})` : "";
-
-		tableRows += `
-                        <tr>
-                            <th scope="row" id="opening">${index}</th>
-                            <td id="pat">${pattern}</td>
-                            <td id="fish1">${manip1}</td>
-                            <td id="fish1hp">${hp1}</td>
-                            <td id="fish1atb" class="separator"><span class="skips">${skip1}</span><br /><span class="limit ${limitClass}">(${limitRefreshes1} Limit)</span></td>
-							<td id="fish2">${manip2}<br /><em class="alt">${manip3}</em></td>
-                            <td id="fish2hp">${hp2}<br /><em class="alt">${hp3}</em></td>
-                            <td id="fish2atb">${skip2}<br /><span class="limit ${limitClass}">(${limitRefreshes2} Limit)</span><br /><em class="alt">${skip3}</em></td>
-                        </tr>
-                        `;
 	});
 	tbodyRef.innerHTML = tableRows;
 }
