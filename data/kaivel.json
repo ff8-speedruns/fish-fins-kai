@@ -3656,7 +3656,7 @@
 		"rng_end_2": 228
 	},
 	{
-		"index": 160,
+		"index": "160 / 163",
 		"pattern": "sa qa SQ24 SS26",
 		"hp1": 118,
 		"hp2": 157,
@@ -3717,28 +3717,6 @@
 		"globaldamage_q": 24,
 		"globaldamage_s": 106,
 		"rng_start_1": 189,
-		"rng_end_1": 216,
-		"rng_start_2": 223,
-		"rng_end_2": 228
-	},
-	{
-		"index": 163,
-		"pattern": "sa qa SQ24 SS26",
-		"hp1": 118,
-		"hp2": 157,
-		"hp3": 0,
-		"drop1": 2,
-		"drop2": 3,
-		"drop3": 0,
-		"manip_1": "SS26 > QS54 > SQ27 > S Thunder",
-		"skip_1": 21,
-		"manip_2": "**Hold X** for Thunder",
-		"skip_2": 5,
-		"manip_3": 0,
-		"skip_3": 0,
-		"globaldamage_q": 51,
-		"globaldamage_s": 106,
-		"rng_start_1": 195,
 		"rng_end_1": 216,
 		"rng_start_2": 223,
 		"rng_end_2": 228
