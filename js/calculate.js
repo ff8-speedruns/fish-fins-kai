@@ -93,9 +93,12 @@ function UpdateIndex(pat) {
 		let limitRefreshes3 = 0;
 		if (qhp.value.length > 0) {
 			qCalcHp = parseInt(qhp.value) - row.globaldamage_q;
-			limitRefreshes1 = LimitsBetweenRng(row.rng_start_1, row.rng_end_1, qCalcHp, 501);
-			limitRefreshes2 = LimitsBetweenRng(row.rng_start_2, row.rng_end_2, qCalcHp, 501);
-			limitRefreshes3 = LimitsBetweenRng(row.rng_start_3, row.rng_end_3, qCalcHp, 501);
+			let rngStart1 = row.rng_start_1++;
+			let rngStart2 = row.rng_start_2++;
+			let rngStart3 = row.rng_start_3++;
+			limitRefreshes1 = LimitsBetweenRng(rngStart1, row.rng_end_1, qCalcHp, 501);
+			limitRefreshes2 = LimitsBetweenRng(rngStart2, row.rng_end_2, qCalcHp, 501);
+			limitRefreshes3 = LimitsBetweenRng(rngStart3, row.rng_end_3, qCalcHp, 501);
 		}
 
 		limitClass = limitMode.checked ? "" : "sup";
