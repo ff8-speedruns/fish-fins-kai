@@ -31,6 +31,12 @@ body {
 }
 
 .sup {
-	font-size: 0.6em;
 	vertical-align: super;
+}
+.sub {
+	vertical-align: sub;
+}
+
+.sup,.sub {
+	font-size: 0.6em;
 }
