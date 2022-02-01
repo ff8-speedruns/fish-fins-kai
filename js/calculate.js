@@ -106,9 +106,9 @@ function UpdateIndex(pat) {
 		let manip1 = row.manip_1 ?? "";
 		let manip2 = row.manip_2 ?? "";
 		let manip3 = row.manip_3 ?? "";
-		let skip1 = row.skip_1 ?? "";
-		let skip2 = row.skip_2 ?? "";
-		let skip3 = row.skip_3 ? `${row.skip_3}<br /><sup>(${limitRefreshes3} Limit)</sup>` : "";
+		let skip1 = row.skip_1 ? `<span class="skips">${row.skip_1}</span>` : "";
+		let skip2 = row.skip_2 ? `<span class="skips">${row.skip_2}</span>` : "";
+		let skip3 = row.skip_3 ? `<span class="skips">${row.skip_3}</span><br /><span class="limit sup">(${limitRefreshes3} Limit)</span>` : "";
 		let hp1 = row.hp1 ? `${row.hp1} (${row.drop1})` : "";
 		let hp2 = row.hp2 ? `${row.hp2} (${row.drop2})` : "";
 		let hp3 = row.hp3 ? `${row.hp3} (${row.drop3})` : "";
@@ -119,10 +119,10 @@ function UpdateIndex(pat) {
                             <td id="pat">${pattern}</td>
                             <td id="fish1">${manip1}</td>
                             <td id="fish1hp">${hp1}</td>
-                            <td id="fish1atb" class="separator">${skip1}<br /><sup>(${limitRefreshes1} Limit)</sup></td>
+                            <td id="fish1atb" class="separator">${skip1}<br /><span class="limit sup">(${limitRefreshes1} Limit)</span></td>
 							<td id="fish2">${manip2}<br /><em class="alt">${manip3}</em></td>
                             <td id="fish2hp">${hp2}<br /><em class="alt">${hp3}</em></td>
-                            <td id="fish2atb">${skip2}<br /><sup>(${limitRefreshes2} Limit)</sup><br /><em class="alt">${skip3}</em></td>
+                            <td id="fish2atb">${skip2}<br /><span class="limit sup">(${limitRefreshes2} Limit)</span><br /><em class="alt">${skip3}</em></td>
                         </tr>
                         `;
 	});
