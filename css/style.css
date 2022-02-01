@@ -27,3 +27,7 @@ body {
 .alt {
 	color: #6a0dad;
 }
+
+sup {
+	font-size: 0.6em;
+}

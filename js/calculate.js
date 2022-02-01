@@ -10,10 +10,11 @@
 
 // Patterns from https://docs.google.com/spreadsheets/d/1uqW35D6YmuSPpVp8WxKf35xmbj5BaD93d5-Tt68ZBnI/edit#gid=2051911454
 
-let vals;
+let VALS, RNG;
 
 // Inputs
 let inputBox = document.getElementById('pattern');
+let qhp = document.getElementById('QHP');
 
 // Outputs
 let index = document.getElementById('index');
@@ -35,9 +36,13 @@ window.onload = async function () {
     loadData();
 }
 
-async function loadData (data = "kaivel") {
-	let fins = await fetch(`./data/${data}.json`);
-	vals = await fins.json();
+async function loadData () {
+	let fins = await fetch(`./data/kaivel.json`);
+	VALS = await fins.json();
+
+	let limitRng = await fetch(`./data/limitRng.json`);
+	RNG = await limitRng.json();
+
 	CalculatePattern();
 }
 
@@ -52,7 +57,7 @@ document.body.addEventListener('keyup', function (e) {
 
 // Formats the pattern based on the user's input
 function CalculatePattern() {
-    let pat = document.getElementById('pattern').value;
+    let pat = inputBox.value;
     UpdateIndex(pat.trim());
 }
 
@@ -66,7 +71,7 @@ function UpdateIndex(pat) {
 
     pat = pat.trim();
     pat = pat.replace(/ /g, '');
-    idx = vals.filter(element => element.pattern.toLowerCase().replace(/ /g, '').startsWith(pat.toLowerCase()));
+    idx = VALS.filter(element => element.pattern.toLowerCase().replace(/ /g, '').startsWith(pat.toLowerCase()));
 
     var tableRows = "";
 	const bold = /\*(.*)\*/gim
@@ -76,6 +81,12 @@ function UpdateIndex(pat) {
 		row.manip_1 = row.manip_1.replace(bold, '<b class="important">$1</b>');
 		row.pattern = row.pattern.replace(bold, '<b class="atb">$1</b>');
 		row.pattern = row.pattern.replace(bold, '<b class="atb">$1</b>');
+		
+		// Calculate limit refreshes.
+	if(qhp.value.length > 0) {
+		qCalcHp = parseInt(qhp.value) - row.globaldamage_q;
+		let limitRefreshes = CalculateLimit(qCalcHp);
+	}
 
         tableRows += `
                         <tr>
@@ -87,15 +98,18 @@ function UpdateIndex(pat) {
 							<td id="fish2">${row.manip_2 ? row.manip_2 : ""}${row.other_manip_2 ? `<br /> <em class="alt">${row.other_manip_2}</em>` : ""}</td>
                             <td id="fish2hp">${row.hp2 ? row.hp2 : ""}${row.hp3 ? `<br /> <em class="alt">${row.hp3}</em>` : ""}</td>
                             <td id="fish2atb">${row.skip_2 ? row.skip_2 : ""}${row.other_skip_2 ? `<br /> <em class="alt">${row.other_skip_2}</em>` : ""}</td>
-							<td id="dmg">${row.globaldamage ? row.globaldamage.replace(' // ', '<br />') : ""}</td>
+							<td id="dmg">Q: ${row.globaldamage_q} <br /> S: ${row.globaldamage_s}</td>
                         </tr>
                         `;
     });
     tbodyRef.innerHTML = tableRows;
 }
 
-function CrisisCalculator (currentHp, maxHp, deadCharacters, statusArray) {
-	
+function CalculateLimit(qhp, rngStart, rngEnd) {
+		let crisisLevel = CrisisCalculator(1, qhp.value, QUISTIS_MAX_HP, 0, []);
+}
+
+function LimitLevelNumerator(currentHp, maxHp, deadCharacters, statusArray) {
 	let hpMod = Math.floor(2500 * (currentHp/maxHp));
 	let deathBonus= Math.floor(1600 + (deadCharacters * 200));
 	
@@ -119,27 +133,23 @@ function CrisisCalculator (currentHp, maxHp, deadCharacters, statusArray) {
 	});
 	
 	let statusBonus = Math.floor(10 * statusSum);
-	
-	// RNG...ish
-	const rngBase = 160;
-	const rngMin = rngBase + 0;
-	const rngMax = rngBase + 255;
-	
-	// Calculation
-	for (let rng = rngMin; rng <= rngMax; rng++) {
-		let limitLevel = (statusBonus + deathBonus - hpMod) / rng;
-		let limitLevelRound = Math.floor(limitLevel);
-		
-		//Limit Level	Crisis Level
-		//4 or lower	0
-		//5				1
-		//6				2
-		//7				3
-		//8 or higher	4
-		
-		let crisisLevel = limitLevelRound - 4;
-		crisisLevel = (crisisLevel > 4) ? 4 : crisisLevel;
-		crisisLevel = (crisisLevel < 0) ? 0 : crisisLevel;
-	}
-	// TODO: DO SOMETHING?
+
+	return (statusBonus + deathBonus - hpMod);
 }
+
+function LimitsBetweenRng(rngStart, rngEnd, currentHp, maxHp) {
+	let numLimits = 0;
+	let numerator = LimitLevelNumerator(currentHp, maxHp, 0, []);
+
+	// Need to map RNG values using Kaivel's explanation.
+	for(let i = rngStart; i <= rngEnd; i++) {
+		let limitLevel = Math.floor(numerator / (160 + RNG[i]));
+		if(limitLevel > 4) {
+			numLimits++;
+		}
+	}
+
+	return numLimits;
+}
+
+console.log(LimitsBetweenRng(28, 56, 48, 501))

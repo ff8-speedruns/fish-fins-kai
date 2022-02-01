@@ -11,7 +11,8 @@
 		"skip_2": 21,
 		"other_manip_2": "SS26 > S Thunder",
 		"other_skip_2": "27",
-		"globaldamage": "Q = 52 // S = 106"
+		"globaldamage_q": 52,
+		"globaldamage_s": 106
 	},
 	{
 		"index": 1,
@@ -24,7 +25,8 @@
 		"manip_2": "SQ18 > S thunder",
 		"skip_2": 28,
 		"other_manip_2": "",
-		"globaldamage": "Q = 18 // S = 36"
+		"globaldamage_q": 18,
+		"globaldamage_s": 36
 	},
 	{
 		"index": 2,
@@ -32,13 +34,14 @@
 		"hp1": "62 (3)",
 		"hp2": "39 (2)",
 		"hp3": "69 (2)",
-		"manip_1": "QS26 > SQ18 > S ATB > S thunder",
+		"manip_1": "QS26 > SQ18 > ATB to S > S thunder",
 		"skip_1": 27,
 		"manip_2": "SS18 > S Thunder",
 		"skip_2": 21,
 		"other_manip_2": "SS18 > S Thunder",
 		"other_skip_2": "27",
-		"globaldamage": "Q = 44 // S = 98"
+		"globaldamage_q": 44,
+		"globaldamage_s": 98
 	},
 	{
 		"index": 3,
@@ -48,10 +51,11 @@
 		"hp3": "",
 		"manip_1": "S thunder *ASAP*",
 		"skip_1": 3,
-		"manip_2": "SS24 > S atb > SS25 > S thunder",
+		"manip_2": "SS24 > ATB to S > SS25 > S thunder",
 		"skip_2": 23,
 		"other_manip_2": "",
-		"globaldamage": "Q = 0 // S  = 85"
+		"globaldamage_q": 0,
+		"globaldamage_s": 85
 	},
 	{
 		"index": 4,
@@ -65,7 +69,8 @@
 		"skip_2": 21,
 		"other_manip_2": "SS18 > S Thunder",
 		"other_skip_2": "27",
-		"globaldamage": "Q = 53 // S = 36"
+		"globaldamage_q": 53,
+		"globaldamage_s": 36
 	},
 	{
 		"index": 5,
@@ -75,10 +80,11 @@
 		"hp3": "",
 		"manip_1": "S Thunder *ASAP*",
 		"skip_1": 1,
-		"manip_2": "SS17 > S atb > SS17 > S thunder",
+		"manip_2": "SS17 > ATB to S > SS17 > S thunder",
 		"skip_2": 23,
 		"other_manip_2": "",
-		"globaldamage": "Q = 0 // S = 68"
+		"globaldamage_q": 0,
+		"globaldamage_s": 68
 	},
 	{
 		"index": 6,
@@ -92,7 +98,8 @@
 		"skip_2": 21,
 		"other_manip_2": "SS26 > S thunder",
 		"other_skip_2": "27",
-		"globaldamage": "Q = 36 // S  = 86"
+		"globaldamage_q": 36,
+		"globaldamage_s": 86
 	},
 	{
 		"index": 7,
@@ -100,13 +107,14 @@
 		"hp1": "62 (3)",
 		"hp2": "39 (2)",
 		"hp3": "69 (2)",
-		"manip_1": "QS18 > S ATB > S thunder",
+		"manip_1": "QS18 > ATB to S > S thunder",
 		"skip_1": 29,
 		"manip_2": "SS19 > Hold X > S Thunder",
 		"skip_2": 22,
 		"other_manip_2": "SS19 > Hold X > S Thunder",
 		"other_skip_2": "28",
-		"globaldamage": "Q = 36 // S = 37"
+		"globaldamage_q": 36,
+		"globaldamage_s": 37
 	},
 	{
 		"index": 8,
@@ -120,7 +128,8 @@
 		"skip_2": 21,
 		"other_manip_2": "SS26 > S thunder",
 		"other_skip_2": "27",
-		"globaldamage": "Q = 53 // S = 52"
+		"globaldamage_q": 53,
+		"globaldamage_s": 52
 	},
 	{
 		"index": 9,
@@ -128,13 +137,14 @@
 		"hp1": "62 (3)",
 		"hp2": "39 (2)",
 		"hp3": "69 (2)",
-		"manip_1": "SQ18 > S ATB > S Thunder",
+		"manip_1": "SQ18 > ATB to S > S Thunder",
 		"skip_1": 27,
 		"manip_2": "SS18 > S thunder",
 		"skip_2": 21,
 		"other_manip_2": "SS18 > S thunder",
 		"other_skip_2": "27",
-		"globaldamage": "Q = 36 // S = 36"
+		"globaldamage_q": 36,
+		"globaldamage_s": 36
 	},
 	{
 		"index": 10,
@@ -148,7 +158,8 @@
 		"skip_2": 21,
 		"other_manip_2": "SS26 > S thunder",
 		"other_skip_2": "27",
-		"globaldamage": "Q = 27 // S = 103"
+		"globaldamage_q": 27,
+		"globaldamage_s": 103
 	},
 	{
 		"index": 11,
@@ -156,13 +167,14 @@
 		"hp1": "62 (3)",
 		"hp2": "39 (2)",
 		"hp3": "69 (2)",
-		"manip_1": "SS25 > S ATB > S Thunder",
+		"manip_1": "SS25 > ATB to S > S Thunder",
 		"skip_1": 22,
 		"manip_2": "SS26 > S thunder",
 		"skip_2": 21,
 		"other_manip_2": "SS26 > S thunder",
 		"other_skip_2": "27",
-		"globaldamage": "Q = 27 // S = 69"
+		"globaldamage_q": 27,
+		"globaldamage_s": 69
 	},
 	{
 		"index": 12,
@@ -170,13 +182,14 @@
 		"hp1": "62 (3)",
 		"hp2": "39 (2)",
 		"hp3": "69 (2)",
-		"manip_1": "QS25 > S ATB > S Thunder",
+		"manip_1": "QS25 > ATB to S > S Thunder",
 		"skip_1": 22,
 		"manip_2": "SS18 > S thunder",
 		"skip_2": 21,
 		"other_manip_2": "SS18 > S thunder",
 		"other_skip_2": "27",
-		"globaldamage": "Q = 27 // S = 61"
+		"globaldamage_q": 27,
+		"globaldamage_s": 61
 	},
 	{
 		"index": 13,
@@ -184,13 +197,14 @@
 		"hp1": "62 (3)",
 		"hp2": "39 (2)",
 		"hp3": "69 (2)",
-		"manip_1": "SS25 > S ATB > S Thunder",
+		"manip_1": "SS25 > ATB to S > S Thunder",
 		"skip_1": 22,
 		"manip_2": "SS26 > S thunder",
 		"skip_2": 21,
 		"other_manip_2": "SS26 > S thunder",
 		"other_skip_2": "27",
-		"globaldamage": "Q = 26 // S  =  77"
+		"globaldamage_q": 26,
+		"globaldamage_s": 77
 	},
 	{
 		"index": 14,
@@ -204,7 +218,8 @@
 		"skip_2": 21,
 		"other_manip_2": "SS18 > S thunder",
 		"other_skip_2": "27",
-		"globaldamage": "Q = 18 // S = 53"
+		"globaldamage_q": 18,
+		"globaldamage_s": 53
 	},
 	{
 		"index": 15,
@@ -218,7 +233,8 @@
 		"skip_2": 22,
 		"other_manip_2": "SS27 > Hold X > S Thunder",
 		"other_skip_2": "28",
-		"globaldamage": "Q = 26 // S = 107"
+		"globaldamage_q": 26,
+		"globaldamage_s": 107
 	},
 	{
 		"index": 16,
@@ -232,7 +248,8 @@
 		"skip_2": 22,
 		"other_manip_2": "SS27 > Hold X > S Thunder",
 		"other_skip_2": "28",
-		"globaldamage": "Q = 44 // S = 44"
+		"globaldamage_q": 44,
+		"globaldamage_s": 44
 	},
 	{
 		"index": 17,
@@ -240,13 +257,14 @@
 		"hp1": "62 (3)",
 		"hp2": "39 (2)",
 		"hp3": "69 (2)",
-		"manip_1": "QQ27 > S ATB > S Thunder",
+		"manip_1": "QQ27 > ATB to S > S Thunder",
 		"skip_1": 20,
 		"manip_2": "SS19 > Hold X > S Thunder",
 		"skip_2": 22,
 		"other_manip_2": "SS19 > Hold X > S Thunder",
 		"other_skip_2": "28",
-		"globaldamage": "Q = 45 // S = 44"
+		"globaldamage_q": 45,
+		"globaldamage_s": 44
 	},
 	{
 		"index": 18,
@@ -260,7 +278,8 @@
 		"skip_2": 22,
 		"other_manip_2": "SS27 > Hold X > S Thunder",
 		"other_skip_2": "28",
-		"globaldamage": "Q = 0 // S = 104"
+		"globaldamage_q": 0,
+		"globaldamage_s": 104
 	},
 	{
 		"index": 19,
@@ -268,13 +287,14 @@
 		"hp1": "62 (3)",
 		"hp2": "39 (2)",
 		"hp3": "69 (2)",
-		"manip_1": "QS18 > S ATB > S Thunder",
+		"manip_1": "QS18 > ATB to S > S Thunder",
 		"skip_1": 15,
 		"manip_2": "SS19 > Hold X > S Thunder",
 		"skip_2": 22,
 		"other_manip_2": "SS19 > Hold X > S Thunder",
 		"other_skip_2": "28",
-		"globaldamage": "Q = 0 // S = 71"
+		"globaldamage_q": 0,
+		"globaldamage_s": 71
 	},
 	{
 		"index": 20,
@@ -288,7 +308,8 @@
 		"skip_2": 21,
 		"other_manip_2": "SS26 > S thunder",
 		"other_skip_2": "27",
-		"globaldamage": "Q = 52 // S = 102"
+		"globaldamage_q": 52,
+		"globaldamage_s": 102
 	},
 	{
 		"index": 21,
@@ -296,13 +317,14 @@
 		"hp1": "62 (3)",
 		"hp2": "39 (2)",
 		"hp3": "69 (2)",
-		"manip_1": "QS18 > S ATB > S Thunder",
+		"manip_1": "QS18 > ATB to S > S Thunder",
 		"skip_1": 15,
 		"manip_2": "SS26 > S thunder",
 		"skip_2": 21,
 		"other_manip_2": "SS26 > S thunder",
 		"other_skip_2": "27",
-		"globaldamage": "Q = 26 // S  = 62"
+		"globaldamage_q": 26,
+		"globaldamage_s": 62
 	},
 	{
 		"index": 22,
@@ -316,7 +338,8 @@
 		"skip_2": 21,
 		"other_manip_2": "SS18 > S thunder",
 		"other_skip_2": "27",
-		"globaldamage": "Q = 78 // S  = 61"
+		"globaldamage_q": 78,
+		"globaldamage_s": 61
 	},
 	{
 		"index": 23,
@@ -330,7 +353,8 @@
 		"skip_2": 22,
 		"other_manip_2": "SS27 > Hold X > S Thunder",
 		"other_skip_2": "28",
-		"globaldamage": "Q = 52 // S  = 78"
+		"globaldamage_q": 52,
+		"globaldamage_s": 78
 	},
 	{
 		"index": 24,
@@ -344,7 +368,8 @@
 		"skip_2": 21,
 		"other_manip_2": "SS18 > S thunder",
 		"other_skip_2": "27",
-		"globaldamage": "Q = 36 // S = 70"
+		"globaldamage_q": 36,
+		"globaldamage_s": 70
 	},
 	{
 		"index": 25,
@@ -352,13 +377,14 @@
 		"hp1": "62 (3)",
 		"hp2": "39 (2)",
 		"hp3": "69 (2)",
-		"manip_1": "QQ52 > S ATB > S Thunder",
+		"manip_1": "QQ52 > ATB to S > S Thunder",
 		"skip_1": 10,
 		"manip_2": "SS27 > Hold X > S Thunder",
 		"skip_2": 22,
 		"other_manip_2": "SS27 > Hold X > S Thunder",
 		"other_skip_2": "28",
-		"globaldamage": "Q = 52 // S = 78"
+		"globaldamage_q": 52,
+		"globaldamage_s": 78
 	},
 	{
 		"index": 26,
@@ -366,13 +392,14 @@
 		"hp1": "62 (3)",
 		"hp2": "39 (2)",
 		"hp3": "69 (2)",
-		"manip_1": "SQ52 > S ATB > S Thunder",
+		"manip_1": "SQ52 > ATB to S > S Thunder",
 		"skip_1": 10,
 		"manip_2": "SS26 > S thunder",
 		"skip_2": 21,
 		"other_manip_2": "SS26 > S thunder",
 		"other_skip_2": "27",
-		"globaldamage": "Q = 52 // S  = 62"
+		"globaldamage_q": 52,
+		"globaldamage_s": 62
 	},
 	{
 		"index": 27,
@@ -386,7 +413,8 @@
 		"skip_2": 22,
 		"other_manip_2": "SS19 > Hold X > S Thunder",
 		"other_skip_2": "28",
-		"globaldamage": "Q = 79 // S = 37"
+		"globaldamage_q": 79,
+		"globaldamage_s": 37
 	},
 	{
 		"index": 28,
@@ -400,7 +428,8 @@
 		"skip_2": 21,
 		"other_manip_2": "SS26 > S thunder",
 		"other_skip_2": "27",
-		"globaldamage": "Q = 0 // S = 78"
+		"globaldamage_q": 0,
+		"globaldamage_s": 78
 	},
 	{
 		"index": 29,
@@ -414,7 +443,8 @@
 		"skip_2": 22,
 		"other_manip_2": "SS19 > Hold X > S Thunder",
 		"other_skip_2": "28",
-		"globaldamage": "Q = 36 // S = 71"
+		"globaldamage_q": 36,
+		"globaldamage_s": 71
 	},
 	{
 		"index": 30,
@@ -422,13 +452,14 @@
 		"hp1": "62 (3)",
 		"hp2": "39 (2)",
 		"hp3": "69 (2)",
-		"manip_1": "QS25 > S ATB > S Thunder",
+		"manip_1": "QS25 > ATB to S > S Thunder",
 		"skip_1": 3,
 		"manip_2": "SS26 > S thunder",
 		"skip_2": 21,
 		"other_manip_2": "SS26 > S thunder",
 		"other_skip_2": "27",
-		"globaldamage": "Q = 52 // S  = 77"
+		"globaldamage_q": 52,
+		"globaldamage_s": 77
 	},
 	{
 		"index": 31,
@@ -442,7 +473,8 @@
 		"skip_2": 22,
 		"other_manip_2": "SS19 > Hold X > S Thunder",
 		"other_skip_2": "28",
-		"globaldamage": "Q = 17 // S = 34"
+		"globaldamage_q": 17,
+		"globaldamage_s": 34
 	},
 	{
 		"index": 32,
@@ -456,7 +488,8 @@
 		"skip_2": 21,
 		"other_manip_2": "SS18 > S thunder",
 		"other_skip_2": "27",
-		"globaldamage": "Q = 52 // S = 53"
+		"globaldamage_q": 52,
+		"globaldamage_s": 53
 	},
 	{
 		"index": 33,
@@ -464,13 +497,14 @@
 		"hp1": "62 (3)",
 		"hp2": "39 (2)",
 		"hp3": "69 (2)",
-		"manip_1": "QS17 > S ATB > S thunder > wait Thunder",
+		"manip_1": "QS17 > ATB to S > S thunder > *wait Thunder*",
 		"skip_1": 1,
 		"manip_2": "SS19 > Hold X > S Thunder",
 		"skip_2": 22,
 		"other_manip_2": "SS19 > Hold X > S Thunder",
 		"other_skip_2": "28",
-		"globaldamage": "Q = 17 // S = 70"
+		"globaldamage_q": 17,
+		"globaldamage_s": 70
 	},
 	{
 		"index": 34,
@@ -478,13 +512,14 @@
 		"hp1": "62 (3)",
 		"hp2": "39 (2)",
 		"hp3": "69 (2)",
-		"manip_1": "SS25 > S ATB > S Thunder > wait Thunder",
+		"manip_1": "SS25 > ATB to S > S Thunder > *wait Thunder*",
 		"skip_1": 1,
 		"manip_2": "SS26 > S thunder",
 		"skip_2": 21,
 		"other_manip_2": "SS26 > S thunder",
 		"other_skip_2": "27",
-		"globaldamage": "Q = 17 // S = 68"
+		"globaldamage_q": 17,
+		"globaldamage_s": 68
 	},
 	{
 		"index": 35,
@@ -498,7 +533,8 @@
 		"skip_2": 22,
 		"other_manip_2": "SS19 > Hold X > S Thunder",
 		"other_skip_2": "28",
-		"globaldamage": "Q = 36 // S  = 36"
+		"globaldamage_q": 36,
+		"globaldamage_s": 36
 	},
 	{
 		"index": 36,
@@ -512,7 +548,8 @@
 		"skip_2": 21,
 		"other_manip_2": "SS26 > S thunder",
 		"other_skip_2": "27",
-		"globaldamage": "Q = 52 // S = 51"
+		"globaldamage_q": 52,
+		"globaldamage_s": 51
 	},
 	{
 		"index": 37,
@@ -526,7 +563,8 @@
 		"skip_2": 22,
 		"other_manip_2": "SS19 > Hold X > S Thunder",
 		"other_skip_2": "28",
-		"globaldamage": "Q = 72 // S = 53"
+		"globaldamage_q": 72,
+		"globaldamage_s": 53
 	},
 	{
 		"index": 38,
@@ -539,7 +577,8 @@
 		"manip_2": "SQ25 > S thunder",
 		"skip_2": 29,
 		"other_manip_2": "",
-		"globaldamage": "Q = 76 // S = 52"
+		"globaldamage_q": 76,
+		"globaldamage_s": 52
 	},
 	{
 		"index": 39,
@@ -547,12 +586,13 @@
 		"hp1": "69 (2)",
 		"hp2": "95 (3)",
 		"hp3": "",
-		"manip_1": "QQ18 > QS19 > S ATB > S Thunder",
+		"manip_1": "QQ18 > QS19 > ATB to S > S Thunder",
 		"skip_1": 28,
 		"manip_2": "SS18 > S thunder",
 		"skip_2": 27,
 		"other_manip_2": "",
-		"globaldamage": "Q = 35 // S  = 54"
+		"globaldamage_q": 35,
+		"globaldamage_s": 54
 	},
 	{
 		"index": 40,
@@ -565,7 +605,8 @@
 		"manip_2": "SQ17 > S thunder",
 		"skip_2": 29,
 		"other_manip_2": "",
-		"globaldamage": "Q = 60 // S = 53"
+		"globaldamage_q": 60,
+		"globaldamage_s": 53
 	},
 	{
 		"index": 41,
@@ -573,12 +614,13 @@
 		"hp1": "69 (2)",
 		"hp2": "95 (3)",
 		"hp3": "",
-		"manip_1": "QQ18 > QS19 > S ATB > S Thunder",
+		"manip_1": "QQ18 > QS19 > ATB to S > S Thunder",
 		"skip_1": 28,
 		"manip_2": "SS26 > S thunder",
 		"skip_2": 27,
 		"other_manip_2": "",
-		"globaldamage": "Q = 43 // S = 62"
+		"globaldamage_q": 43,
+		"globaldamage_s": 62
 	},
 	{
 		"index": 42,
@@ -591,7 +633,8 @@
 		"manip_2": "SQ17 > S thunder",
 		"skip_2": 29,
 		"other_manip_2": "",
-		"globaldamage": "Q = 17 // S = 87"
+		"globaldamage_q": 17,
+		"globaldamage_s": 87
 	},
 	{
 		"index": 43,
@@ -599,12 +642,13 @@
 		"hp1": "69 (2)",
 		"hp2": "95 (3)",
 		"hp3": "",
-		"manip_1": "QS26 > SS27 > S ATB > S Thunder",
+		"manip_1": "QS26 > SS27 > ATB to S > S Thunder",
 		"skip_1": 28,
 		"manip_2": "SS26 > S thunder",
 		"skip_2": 27,
 		"other_manip_2": "",
-		"globaldamage": "Q = 0 // S = 129"
+		"globaldamage_q": 0,
+		"globaldamage_s": 129
 	},
 	{
 		"index": 44,
@@ -617,7 +661,8 @@
 		"manip_2": "SQ17 > S thunder",
 		"skip_2": 29,
 		"other_manip_2": "",
-		"globaldamage": "Q = 17 // S = 87"
+		"globaldamage_q": 17,
+		"globaldamage_s": 87
 	},
 	{
 		"index": 45,
@@ -630,7 +675,8 @@
 		"manip_2": "SQ25 > S thunder",
 		"skip_2": 29,
 		"other_manip_2": "",
-		"globaldamage": "Q = 76 // S = 52"
+		"globaldamage_q": 76,
+		"globaldamage_s": 52
 	},
 	{
 		"index": 46,
@@ -638,12 +684,13 @@
 		"hp1": "69 (2)",
 		"hp2": "95 (3)",
 		"hp3": "",
-		"manip_1": "SS27 > QS18 > S ATB > S Thunder",
+		"manip_1": "SS27 > QS18 > ATB to S > S Thunder",
 		"skip_1": 23,
 		"manip_2": "SS26 > S thunder",
 		"skip_2": 27,
 		"other_manip_2": "",
-		"globaldamage": "Q = 26 // S = 96"
+		"globaldamage_q": 26,
+		"globaldamage_s": 96
 	},
 	{
 		"index": 47,
@@ -656,7 +703,8 @@
 		"manip_2": "SS26 > S thunder",
 		"skip_2": 27,
 		"other_manip_2": "",
-		"globaldamage": "Q= 26 // S = 104"
+		"globaldamage_q": 26,
+		"globaldamage_s": 104
 	},
 	{
 		"index": 48,
@@ -669,7 +717,8 @@
 		"manip_2": "SQ25 > S thunder",
 		"skip_2": 29,
 		"other_manip_2": "",
-		"globaldamage": "Q = 25 // S = 104"
+		"globaldamage_q": 25,
+		"globaldamage_s": 104
 	},
 	{
 		"index": 49,
@@ -682,7 +731,8 @@
 		"manip_2": "SQ25 > S thunder",
 		"skip_2": 29,
 		"other_manip_2": "",
-		"globaldamage": "Q = 25 // S = 78"
+		"globaldamage_q": 25,
+		"globaldamage_s": 78
 	},
 	{
 		"index": 50,
@@ -695,7 +745,8 @@
 		"manip_2": "SQ17 > S thunder",
 		"skip_2": 29,
 		"other_manip_2": "",
-		"globaldamage": "Q = 60 // S = 18"
+		"globaldamage_q": 60,
+		"globaldamage_s": 18
 	},
 	{
 		"index": 51,
@@ -703,12 +754,13 @@
 		"hp1": "69 (2)",
 		"hp2": "95 (3)",
 		"hp3": "",
-		"manip_1": "SS26 > S ATB > S Thunder",
+		"manip_1": "SS26 > ATB to S > S Thunder",
 		"skip_1": 26,
 		"manip_2": "SS26 > S thunder",
 		"skip_2": 27,
 		"other_manip_2": "",
-		"globaldamage": "Q = 51 // S = 52"
+		"globaldamage_q": 51,
+		"globaldamage_s": 52
 	},
 	{
 		"index": 52,
@@ -721,7 +773,8 @@
 		"manip_2": "SS26 > S thunder",
 		"skip_2": 27,
 		"other_manip_2": "",
-		"globaldamage": "Q = 0 // S = 89"
+		"globaldamage_q": 0,
+		"globaldamage_s": 89
 	},
 	{
 		"index": 53,
@@ -734,7 +787,8 @@
 		"manip_2": "SQ17 > S thunder",
 		"skip_2": 29,
 		"other_manip_2": "",
-		"globaldamage": "Q = 17 // S = 63"
+		"globaldamage_q": 17,
+		"globaldamage_s": 63
 	},
 	{
 		"index": 54,
@@ -742,12 +796,13 @@
 		"hp1": "69 (2)",
 		"hp2": "95 (3)",
 		"hp3": "",
-		"manip_1": "SS26 > S ATB > S Thunder",
+		"manip_1": "SS26 > ATB to S > S Thunder",
 		"skip_1": 23,
 		"manip_2": "SQ25 > S thunder",
 		"skip_2": 29,
 		"other_manip_2": "",
-		"globaldamage": "Q = 25 // S = 79"
+		"globaldamage_q": 25,
+		"globaldamage_s": 79
 	},
 	{
 		"index": 55,
@@ -760,7 +815,8 @@
 		"manip_2": "SS18 > S thunder",
 		"skip_2": 27,
 		"other_manip_2": "",
-		"globaldamage": "Q = 17 // S = 53"
+		"globaldamage_q": 17,
+		"globaldamage_s": 53
 	},
 	{
 		"index": 56,
@@ -768,12 +824,13 @@
 		"hp1": "69 (2)",
 		"hp2": "95 (3)",
 		"hp3": "",
-		"manip_1": "QS24 > S ATB > S Thunder",
+		"manip_1": "QS24 > ATB to S > S Thunder",
 		"skip_1": 20,
 		"manip_2": "SS26 > S thunder",
 		"skip_2": 27,
 		"other_manip_2": "",
-		"globaldamage": "Q = 24 // S = 75"
+		"globaldamage_q": 24,
+		"globaldamage_s": 75
 	},
 	{
 		"index": 57,
@@ -786,7 +843,8 @@
 		"manip_2": "SQ25 > S thunder",
 		"skip_2": 29,
 		"other_manip_2": "",
-		"globaldamage": "Q = 49 // S = 41"
+		"globaldamage_q": 49,
+		"globaldamage_s": 41
 	},
 	{
 		"index": 58,
@@ -799,7 +857,8 @@
 		"manip_2": "SS18 > S thunder",
 		"skip_2": 27,
 		"other_manip_2": "",
-		"globaldamage": "Q = 26 // S = 63"
+		"globaldamage_q": 26,
+		"globaldamage_s": 63
 	},
 	{
 		"index": 59,
@@ -807,12 +866,13 @@
 		"hp1": "69 (2)",
 		"hp2": "95 (3)",
 		"hp3": "",
-		"manip_1": "QQ26 > S ATB > S Thunder",
+		"manip_1": "QQ26 > ATB to S > S Thunder",
 		"skip_1": 16,
 		"manip_2": "SS26 > S thunder",
 		"skip_2": 27,
 		"other_manip_2": "",
-		"globaldamage": "Q = 26 // S = 79"
+		"globaldamage_q": 26,
+		"globaldamage_s": 79
 	},
 	{
 		"index": 60,
@@ -825,7 +885,8 @@
 		"manip_2": "SS26 > S thunder",
 		"skip_2": 27,
 		"other_manip_2": "",
-		"globaldamage": "Q = 0 // S = 68"
+		"globaldamage_q": 0,
+		"globaldamage_s": 68
 	},
 	{
 		"index": 61,
@@ -838,7 +899,8 @@
 		"manip_2": "SQ25 > S thunder",
 		"skip_2": 29,
 		"other_manip_2": "",
-		"globaldamage": "Q = 25 // S = 77"
+		"globaldamage_q": 25,
+		"globaldamage_s": 77
 	},
 	{
 		"index": 62,
@@ -846,12 +908,13 @@
 		"hp1": "69 (2)",
 		"hp2": "95 (3)",
 		"hp3": "",
-		"manip_1": "SS27 > S ATB > S Thunder",
+		"manip_1": "SS27 > ATB to S > S Thunder",
 		"skip_1": 13,
 		"manip_2": "SQ25 > S thunder",
 		"skip_2": 29,
 		"other_manip_2": "",
-		"globaldamage": "Q = 25 // S = 77"
+		"globaldamage_q": 25,
+		"globaldamage_s": 77
 	},
 	{
 		"index": 63,
@@ -864,7 +927,8 @@
 		"manip_2": "SS18 > S thunder",
 		"skip_2": 27,
 		"other_manip_2": "",
-		"globaldamage": "Q = 18 // S = 68"
+		"globaldamage_q": 18,
+		"globaldamage_s": 68
 	},
 	{
 		"index": 64,
@@ -872,12 +936,13 @@
 		"hp1": "69 (2)",
 		"hp2": "95 (3)",
 		"hp3": "",
-		"manip_1": "QS25 > S ATB > S thunder",
+		"manip_1": "QS25 > ATB to S > S thunder",
 		"skip_1": 11,
 		"manip_2": "SQ17 > S thunder",
 		"skip_2": 29,
 		"other_manip_2": "",
-		"globaldamage": "Q = 52 // S = 51"
+		"globaldamage_q": 52,
+		"globaldamage_s": 51
 	},
 	{
 		"index": 65,
@@ -890,7 +955,8 @@
 		"manip_2": "SS18 > S thunder",
 		"skip_2": 27,
 		"other_manip_2": "",
-		"globaldamage": "Q = 19 // S = 71"
+		"globaldamage_q": 19,
+		"globaldamage_s": 71
 	},
 	{
 		"index": 66,
@@ -898,12 +964,13 @@
 		"hp1": "69 (2)",
 		"hp2": "95 (3)",
 		"hp3": "",
-		"manip_1": "QS18 > S ATB > S Thunder",
+		"manip_1": "QS18 > ATB to S > S Thunder",
 		"skip_1": 7,
 		"manip_2": "SS18 > S thunder",
 		"skip_2": 27,
 		"other_manip_2": "",
-		"globaldamage": "Q = 0 // S = 71"
+		"globaldamage_q": 0,
+		"globaldamage_s": 71
 	},
 	{
 		"index": 67,
@@ -911,12 +978,13 @@
 		"hp1": "69 (2)",
 		"hp2": "95 (3)",
 		"hp3": "",
-		"manip_1": "SS26 > S ATB > S Thunder",
+		"manip_1": "SS26 > ATB to S > S Thunder",
 		"skip_1": 7,
 		"manip_2": "SQ25 > S thunder",
 		"skip_2": 29,
 		"other_manip_2": "",
-		"globaldamage": "Q = 25 // S = 68"
+		"globaldamage_q": 25,
+		"globaldamage_s": 68
 	},
 	{
 		"index": 68,
@@ -924,12 +992,13 @@
 		"hp1": "69 (2)",
 		"hp2": "95 (3)",
 		"hp3": "",
-		"manip_1": "SS16 > S ATB > S thunder",
+		"manip_1": "SS16 > ATB to S > S thunder",
 		"skip_1": 6,
 		"manip_2": "SQ17 > S thunder",
 		"skip_2": 29,
 		"other_manip_2": "",
-		"globaldamage": "Q = 52 // S = 33"
+		"globaldamage_q": 52,
+		"globaldamage_s": 33
 	},
 	{
 		"index": 69,
@@ -937,12 +1006,13 @@
 		"hp1": "69 (2)",
 		"hp2": "95 (3)",
 		"hp3": "",
-		"manip_1": "QQ25 > S ATB > S Thunder",
+		"manip_1": "QQ25 > ATB to S > S Thunder",
 		"skip_1": 4,
 		"manip_2": "SS26 > S thunder",
 		"skip_2": 27,
 		"other_manip_2": "",
-		"globaldamage": "Q = 76 // S = 26"
+		"globaldamage_q": 76,
+		"globaldamage_s": 26
 	},
 	{
 		"index": 70,
@@ -955,7 +1025,8 @@
 		"manip_2": "SS18 > S thunder",
 		"skip_2": 27,
 		"other_manip_2": "",
-		"globaldamage": "Q = 53 // S = 52"
+		"globaldamage_q": 53,
+		"globaldamage_s": 52
 	},
 	{
 		"index": 71,
@@ -967,8 +1038,10 @@
 		"skip_1": 31,
 		"manip_2": "Hold X > S Thunder",
 		"skip_2": 22,
-		"other_manip_2": "Hold X > S Thunder > Skip 32",
-		"globaldamage": "Q = 87 // S = 42"
+		"other_manip_2": "Hold X > S Thunder",
+		"other_skip_2": "32",
+		"globaldamage_q": 87,
+		"globaldamage_s": 42
 	},
 	{
 		"index": 72,
@@ -981,7 +1054,8 @@
 		"manip_2": "SQ17 > S thunder",
 		"skip_2": 29,
 		"other_manip_2": "",
-		"globaldamage": "Q = 55 // S = 54"
+		"globaldamage_q": 55,
+		"globaldamage_s": 54
 	},
 	{
 		"index": 73,
@@ -989,12 +1063,13 @@
 		"hp1": "69 (2)",
 		"hp2": "95 (3)",
 		"hp3": "",
-		"manip_1": "SQ19 > S ATB > S Thunder > wait Thunder",
+		"manip_1": "SQ19 > ATB to S > S Thunder > *wait Thunder*",
 		"skip_1": 1,
 		"manip_2": "SQ17 > S thunder",
 		"skip_2": 29,
 		"other_manip_2": "",
-		"globaldamage": "Q = 36 // S = 36"
+		"globaldamage_q": 36,
+		"globaldamage_s": 36
 	},
 	{
 		"index": 74,
@@ -1007,7 +1082,8 @@
 		"manip_2": "SS18 > S thunder",
 		"skip_2": 27,
 		"other_manip_2": "",
-		"globaldamage": "Q = 38 // S = 72"
+		"globaldamage_q": 38,
+		"globaldamage_s": 72
 	},
 	{
 		"index": 75,
@@ -1020,7 +1096,8 @@
 		"manip_2": "SS26 > S thunder",
 		"skip_2": 27,
 		"other_manip_2": "",
-		"globaldamage": "Q = 19 // S = 70"
+		"globaldamage_q": 19,
+		"globaldamage_s": 70
 	},
 	{
 		"index": 76,
@@ -1028,12 +1105,13 @@
 		"hp1": "69 (2)",
 		"hp2": "95 (3)",
 		"hp3": "",
-		"manip_1": "SQ27 > S ATB > S Thunder > wait thunder",
+		"manip_1": "SQ27 > ATB to S > S Thunder > *wait Thunder*",
 		"skip_1": 1,
 		"manip_2": "SQ25 > S thunder",
 		"skip_2": 29,
 		"other_manip_2": "",
-		"globaldamage": "Q = 52 // S = 41"
+		"globaldamage_q": 52,
+		"globaldamage_s": 41
 	},
 	{
 		"index": 77,
@@ -1045,8 +1123,10 @@
 		"skip_1": 31,
 		"manip_2": "Hold X > S Thunder",
 		"skip_2": 22,
-		"other_manip_2": "Hold X > S Thunder > Skip 32",
-		"globaldamage": "Q = 44 // S = 67"
+		"other_manip_2": "Hold X > S Thunder",
+		"other_skip_2": "32",
+		"globaldamage_q": 44,
+		"globaldamage_s": 67
 	},
 	{
 		"index": 78,
@@ -1059,7 +1139,8 @@
 		"manip_2": "SS26 > S thunder",
 		"skip_2": 27,
 		"other_manip_2": "",
-		"globaldamage": "Q = 27 // S = 52"
+		"globaldamage_q": 27,
+		"globaldamage_s": 52
 	},
 	{
 		"index": 79,
@@ -1073,7 +1154,8 @@
 		"skip_2": 17,
 		"other_manip_2": "SQ24 > S thunder",
 		"other_skip_2": "27",
-		"globaldamage": "Q = 70 // S = 78"
+		"globaldamage_q": 70,
+		"globaldamage_s": 78
 	},
 	{
 		"index": 80,
@@ -1081,12 +1163,13 @@
 		"hp1": "95 (3)",
 		"hp2": "24 (3)",
 		"hp3": "113 (3)",
-		"manip_1": "SQ27 > QS26 > QS26 > S ATB > S Thunder",
+		"manip_1": "SQ27 > QS26 > QS26 > ATB to S > S Thunder",
 		"skip_1": 26,
 		"manip_2": "Hold X > S Thunder",
 		"skip_2": 22,
 		"other_manip_2": "Hold X > S Thunder > Skip 32",
-		"globaldamage": "Q = 52 // S = 78"
+		"globaldamage_q": 52,
+		"globaldamage_s": 78
 	},
 	{
 		"index": 81,
@@ -1100,7 +1183,8 @@
 		"skip_2": 17,
 		"other_manip_2": "SQ17 > S thunder",
 		"other_skip_2": "27",
-		"globaldamage": "Q = 46 // S = 60"
+		"globaldamage_q": 46,
+		"globaldamage_s": 60
 	},
 	{
 		"index": 82,
@@ -1108,13 +1192,14 @@
 		"hp1": "95 (3)",
 		"hp2": "24 (3)",
 		"hp3": "113 (3)",
-		"manip_1": "SS18 > QQ27 > SQ18 > S ATB > S Thunder",
+		"manip_1": "SS18 > QQ27 > SQ18 > ATB to S > S Thunder",
 		"skip_1": 25,
 		"manip_2": "SQ24 > S thunder",
 		"skip_2": 17,
 		"other_manip_2": "SQ24 > S thunder",
 		"other_skip_2": "27",
-		"globaldamage": "Q = 86 // S = 24"
+		"globaldamage_q": 86,
+		"globaldamage_s": 24
 	},
 	{
 		"index": 83,
@@ -1128,7 +1213,8 @@
 		"skip_2": 17,
 		"other_manip_2": "SQ17 > S thunder",
 		"other_skip_2": "27",
-		"globaldamage": "Q = 70 // S = 34"
+		"globaldamage_q": 70,
+		"globaldamage_s": 34
 	},
 	{
 		"index": 84,
@@ -1136,13 +1222,14 @@
 		"hp1": "95 (3)",
 		"hp2": "24 (3)",
 		"hp3": "113 (3)",
-		"manip_1": "QS18 > QS18 > S ATB > S Thunder",
+		"manip_1": "QS18 > QS18 > ATB to S > S Thunder",
 		"skip_1": 26,
 		"manip_2": "SQ24 > S thunder",
 		"skip_2": 17,
 		"other_manip_2": "SQ24 > S thunder",
 		"other_skip_2": "27",
-		"globaldamage": "Q = 70 // S = 36"
+		"globaldamage_q": 70,
+		"globaldamage_s": 36
 	},
 	{
 		"index": 85,
@@ -1156,7 +1243,8 @@
 		"skip_2": 17,
 		"other_manip_2": "SQ17 > S thunder",
 		"other_skip_2": "27",
-		"globaldamage": "Q = 72 // S = 18"
+		"globaldamage_q": 72,
+		"globaldamage_s": 18
 	},
 	{
 		"index": 86,
@@ -1170,7 +1258,8 @@
 		"skip_2": 17,
 		"other_manip_2": "SQ24 > S thunder",
 		"other_skip_2": "27",
-		"globaldamage": "Q = 78 // S = 52"
+		"globaldamage_q": 78,
+		"globaldamage_s": 52
 	},
 	{
 		"index": 87,
@@ -1178,13 +1267,14 @@
 		"hp1": "95 (3)",
 		"hp2": "24 (3)",
 		"hp3": "113 (3)",
-		"manip_1": "QQ18 > SQ27 > S ATB > S thunder",
+		"manip_1": "QQ18 > SQ27 > ATB to S > S thunder",
 		"skip_1": 25,
 		"manip_2": "SQ24 > S thunder",
 		"skip_2": 17,
 		"other_manip_2": "SQ24 > S thunder",
 		"other_skip_2": "27",
-		"globaldamage": "Q = 69 // S = 42"
+		"globaldamage_q": 69,
+		"globaldamage_s": 42
 	},
 	{
 		"index": 88,
@@ -1198,7 +1288,8 @@
 		"skip_2": 17,
 		"other_manip_2": "SQ24 > S thunder",
 		"other_skip_2": "27",
-		"globaldamage": "Q = 49 // S = 51"
+		"globaldamage_q": 49,
+		"globaldamage_s": 51
 	},
 	{
 		"index": 89,
@@ -1212,7 +1303,8 @@
 		"skip_2": 17,
 		"other_manip_2": "SQ17 > S thunder",
 		"other_skip_2": "27",
-		"globaldamage": "Q = 42 // S = 42"
+		"globaldamage_q": 42,
+		"globaldamage_s": 42
 	},
 	{
 		"index": 90,
@@ -1225,7 +1317,8 @@
 		"manip_2": "Hold X",
 		"skip_2": 22,
 		"other_manip_2": "Hold X > Skip 32",
-		"globaldamage": "Q = 51 // S = 52"
+		"globaldamage_q": 51,
+		"globaldamage_s": 52
 	},
 	{
 		"index": 91,
@@ -1233,13 +1326,14 @@
 		"hp1": "95 (3)",
 		"hp2": "24 (3)",
 		"hp3": "113 (3)",
-		"manip_1": "SQ18 > S ATB > S Thunder",
+		"manip_1": "SQ18 > ATB to S > S Thunder",
 		"skip_1": 25,
 		"manip_2": "SQ17 > S thunder",
 		"skip_2": 17,
 		"other_manip_2": "SQ17 > S thunder",
 		"other_skip_2": "27",
-		"globaldamage": "Q = 72 // S = 0"
+		"globaldamage_q": 72,
+		"globaldamage_s": 0
 	},
 	{
 		"index": 92,
@@ -1247,13 +1341,14 @@
 		"hp1": "95 (3)",
 		"hp2": "24 (3)",
 		"hp3": "113 (3)",
-		"manip_1": "QQ27 > S ATB > S Thunder",
+		"manip_1": "QQ27 > ATB to S > S Thunder",
 		"skip_1": 25,
 		"manip_2": "SQ24 > S thunder",
 		"skip_2": 17,
 		"other_manip_2": "SQ24 > S thunder",
 		"other_skip_2": "27",
-		"globaldamage": "Q = 102 // S = 26"
+		"globaldamage_q": 102,
+		"globaldamage_s": 26
 	},
 	{
 		"index": 93,
@@ -1261,13 +1356,14 @@
 		"hp1": "95 (3)",
 		"hp2": "24 (3)",
 		"hp3": "113 (3)",
-		"manip_1": "SQ25 > S ATB > S Thunder",
+		"manip_1": "SQ25 > ATB to S > S Thunder",
 		"skip_1": 23,
 		"manip_2": "SQ24 > S thunder",
 		"skip_2": 17,
 		"other_manip_2": "SQ24 > S thunder",
 		"other_skip_2": "27",
-		"globaldamage": "Q = 66 // S = 26"
+		"globaldamage_q": 66,
+		"globaldamage_s": 26
 	},
 	{
 		"index": 94,
@@ -1281,7 +1377,8 @@
 		"skip_2": 17,
 		"other_manip_2": "SQ24 > S thunder",
 		"other_skip_2": "27",
-		"globaldamage": "Q = 98 // S = 52"
+		"globaldamage_q": 98,
+		"globaldamage_s": 52
 	},
 	{
 		"index": 95,
@@ -1295,7 +1392,8 @@
 		"skip_2": 17,
 		"other_manip_2": "SQ17 > S thunder",
 		"other_skip_2": "27",
-		"globaldamage": "Q = 59 // S = 18"
+		"globaldamage_q": 59,
+		"globaldamage_s": 18
 	},
 	{
 		"index": 96,
@@ -1303,13 +1401,14 @@
 		"hp1": "95 (3)",
 		"hp2": "24 (3)",
 		"hp3": "113 (3)",
-		"manip_1": "SQ24 > S ATB > S Thunder",
+		"manip_1": "SQ24 > ATB to S > S Thunder",
 		"skip_1": 21,
 		"manip_2": "SQ24 > S thunder",
 		"skip_2": 17,
 		"other_manip_2": "SQ24 > S thunder",
 		"other_skip_2": "27",
-		"globaldamage": "Q = 48 // S = 52"
+		"globaldamage_q": 48,
+		"globaldamage_s": 52
 	},
 	{
 		"index": 97,
@@ -1317,13 +1416,14 @@
 		"hp1": "95 (3)",
 		"hp2": "24 (3)",
 		"hp3": "113 (3)",
-		"manip_1": "QQ17 > S ATB > S Thunder",
+		"manip_1": "QQ17 > ATB to S > S Thunder",
 		"skip_1": 18,
 		"manip_2": "SQ17 > S thunder",
 		"skip_2": 17,
 		"other_manip_2": "SQ17 > S thunder",
 		"other_skip_2": "27",
-		"globaldamage": "Q = 52 // S = 18"
+		"globaldamage_q": 52,
+		"globaldamage_s": 18
 	},
 	{
 		"index": 98,
@@ -1337,7 +1437,8 @@
 		"skip_2": 17,
 		"other_manip_2": "SQ24 > S thunder",
 		"other_skip_2": "27",
-		"globaldamage": "Q = 102 // S = 0"
+		"globaldamage_q": 102,
+		"globaldamage_s": 0
 	},
 	{
 		"index": 99,
@@ -1351,7 +1452,8 @@
 		"skip_2": 17,
 		"other_manip_2": "SQ24 > S thunder",
 		"other_skip_2": "27",
-		"globaldamage": "Q = 90 // S = 0"
+		"globaldamage_q": 90,
+		"globaldamage_s": 0
 	},
 	{
 		"index": 100,
@@ -1365,7 +1467,8 @@
 		"skip_2": 17,
 		"other_manip_2": "SQ17 > S thunder",
 		"other_skip_2": "27",
-		"globaldamage": "Q = 85 // S = 0"
+		"globaldamage_q": 85,
+		"globaldamage_s": 0
 	},
 	{
 		"index": 101,
@@ -1379,7 +1482,8 @@
 		"skip_2": 17,
 		"other_manip_2": "SQ17 > S thunder",
 		"other_skip_2": "27",
-		"globaldamage": "Q = 69 // S = 0"
+		"globaldamage_q": 69,
+		"globaldamage_s": 0
 	},
 	{
 		"index": 102,
@@ -1393,7 +1497,8 @@
 		"skip_2": 17,
 		"other_manip_2": "SQ17 > S thunder",
 		"other_skip_2": "27",
-		"globaldamage": "Q = 69 // S = 36"
+		"globaldamage_q": 69,
+		"globaldamage_s": 36
 	},
 	{
 		"index": 103,
@@ -1407,7 +1512,8 @@
 		"skip_2": 17,
 		"other_manip_2": "SQ17 > S thunder",
 		"other_skip_2": "27",
-		"globaldamage": "Q = 52 // S = 18"
+		"globaldamage_q": 52,
+		"globaldamage_s": 18
 	},
 	{
 		"index": 104,
@@ -1421,7 +1527,8 @@
 		"skip_2": 17,
 		"other_manip_2": "SQ17 > S thunder",
 		"other_skip_2": "27",
-		"globaldamage": "Q = 69 // S = 0"
+		"globaldamage_q": 69,
+		"globaldamage_s": 0
 	},
 	{
 		"index": 105,
@@ -1429,13 +1536,14 @@
 		"hp1": "95 (3)",
 		"hp2": "24 (3)",
 		"hp3": "113 (3)",
-		"manip_1": "SQ26 > S ATB > S Thunder",
+		"manip_1": "SQ26 > ATB to S > S Thunder",
 		"skip_1": 12,
 		"manip_2": "SQ24 > S thunder",
 		"skip_2": 17,
 		"other_manip_2": "SQ24 > S thunder",
 		"other_skip_2": "27",
-		"globaldamage": "Q = 91 // S = 0"
+		"globaldamage_q": 91,
+		"globaldamage_s": 0
 	},
 	{
 		"index": 106,
@@ -1443,13 +1551,14 @@
 		"hp1": "95 (3)",
 		"hp2": "24 (3)",
 		"hp3": "113 (3)",
-		"manip_1": "SQ25 > S ATB > S Thunder",
+		"manip_1": "SQ25 > ATB to S > S Thunder",
 		"skip_1": 9,
 		"manip_2": "SQ24 > S thunder",
 		"skip_2": 17,
 		"other_manip_2": "SQ24 > S thunder",
 		"other_skip_2": "27",
-		"globaldamage": "Q = 84 // S = 0"
+		"globaldamage_q": 84,
+		"globaldamage_s": 0
 	},
 	{
 		"index": 107,
@@ -1463,7 +1572,8 @@
 		"skip_2": 17,
 		"other_manip_2": "SQ24 > S thunder",
 		"other_skip_2": "27",
-		"globaldamage": "Q = 74 // S = 27"
+		"globaldamage_q": 74,
+		"globaldamage_s": 27
 	},
 	{
 		"index": 108,
@@ -1471,13 +1581,14 @@
 		"hp1": "95 (3)",
 		"hp2": "24 (3)",
 		"hp3": "113 (3)",
-		"manip_1": "QS27 > S ATB > S Thunder",
+		"manip_1": "QS27 > ATB to S > S Thunder",
 		"skip_1": 7,
 		"manip_2": "SQ24 > S thunder",
 		"skip_2": 17,
 		"other_manip_2": "SQ24 > S thunder",
 		"other_skip_2": "27",
-		"globaldamage": "Q = 74 // S = 27"
+		"globaldamage_q": 74,
+		"globaldamage_s": 27
 	},
 	{
 		"index": 109,
@@ -1491,7 +1602,8 @@
 		"skip_2": 17,
 		"other_manip_2": "SQ17 > S thunder",
 		"other_skip_2": "27",
-		"globaldamage": "Q = 60 // S = 18"
+		"globaldamage_q": 60,
+		"globaldamage_s": 18
 	},
 	{
 		"index": 110,
@@ -1505,7 +1617,8 @@
 		"skip_2": 17,
 		"other_manip_2": "SQ17 > S thunder",
 		"other_skip_2": "27",
-		"globaldamage": "Q = 52 // S = 27"
+		"globaldamage_q": 52,
+		"globaldamage_s": 27
 	},
 	{
 		"index": 111,
@@ -1518,7 +1631,8 @@
 		"manip_2": "SS18 > S Thunder",
 		"skip_2": 27,
 		"other_manip_2": "",
-		"globaldamage": "Q = 88 // S = 52"
+		"globaldamage_q": 88,
+		"globaldamage_s": 52
 	},
 	{
 		"index": 112,
@@ -1526,12 +1640,13 @@
 		"hp1": "113 (3)",
 		"hp2": "118 (2)",
 		"hp3": "",
-		"manip_1": "SS24 > QQ18 > SQ24 > S ATB > S Thunder",
+		"manip_1": "SS24 > QQ18 > SQ24 > ATB to S > S Thunder",
 		"skip_1": 26,
 		"manip_2": "SS27 > S Thunder",
 		"skip_2": 27,
 		"other_manip_2": "",
-		"globaldamage": "Q = 85 // S = 51"
+		"globaldamage_q": 85,
+		"globaldamage_s": 51
 	},
 	{
 		"index": 113,
@@ -1544,7 +1659,8 @@
 		"manip_2": "SS27 > S Thunder",
 		"skip_2": 27,
 		"other_manip_2": "",
-		"globaldamage": "Q = 85 // S = 51"
+		"globaldamage_q": 85,
+		"globaldamage_s": 51
 	},
 	{
 		"index": 114,
@@ -1557,7 +1673,8 @@
 		"manip_2": "SS18 > S Thunder",
 		"skip_2": 27,
 		"other_manip_2": "",
-		"globaldamage": "Q = 69 // S = 62"
+		"globaldamage_q": 69,
+		"globaldamage_s": 62
 	},
 	{
 		"index": 115,
@@ -1565,12 +1682,13 @@
 		"hp1": "113 (3)",
 		"hp2": "118 (2)",
 		"hp3": "",
-		"manip_1": "SS24 > QQ26 > SQ24 > S ATB > S Thunder",
+		"manip_1": "SS24 > QQ26 > SQ24 > ATB to S > S Thunder",
 		"skip_1": 26,
 		"manip_2": "SS27 > S Thunder",
 		"skip_2": 27,
 		"other_manip_2": "",
-		"globaldamage": "Q = 76 // S = 78"
+		"globaldamage_q": 76,
+		"globaldamage_s": 78
 	},
 	{
 		"index": 116,
@@ -1583,7 +1701,8 @@
 		"manip_2": "SS27 > S Thunder",
 		"skip_2": 27,
 		"other_manip_2": "",
-		"globaldamage": "Q = 68 // S = 69"
+		"globaldamage_q": 68,
+		"globaldamage_s": 69
 	},
 	{
 		"index": 117,
@@ -1591,12 +1710,13 @@
 		"hp1": "113 (3)",
 		"hp2": "118 (2)",
 		"hp3": "",
-		"manip_1": "SQ18 > QQ24 > S ATB > S Thunder",
+		"manip_1": "SQ18 > QQ24 > ATB to S > S Thunder",
 		"skip_1": 26,
 		"manip_2": "SS36 > Hold X",
 		"skip_2": 27,
 		"other_manip_2": "",
-		"globaldamage": "Q = 67 // S = 60"
+		"globaldamage_q": 67,
+		"globaldamage_s": 60
 	},
 	{
 		"index": 118,
@@ -1609,7 +1729,8 @@
 		"manip_2": "SS27 > S Thunder",
 		"skip_2": 27,
 		"other_manip_2": "",
-		"globaldamage": "Q = 75 // S = 51"
+		"globaldamage_q": 75,
+		"globaldamage_s": 51
 	},
 	{
 		"index": 119,
@@ -1617,12 +1738,13 @@
 		"hp1": "113 (3)",
 		"hp2": "118 (2)",
 		"hp3": "",
-		"manip_1": "QQ18 > SQ24 > S ATB > S Thunder",
+		"manip_1": "QQ18 > SQ24 > ATB to S > S Thunder",
 		"skip_1": 26,
 		"manip_2": "SS27 > S Thunder",
 		"skip_2": 27,
 		"other_manip_2": "",
-		"globaldamage": "Q = 67 // S = 51"
+		"globaldamage_q": 67,
+		"globaldamage_s": 51
 	},
 	{
 		"index": 120,
@@ -1635,7 +1757,8 @@
 		"manip_2": "SS54 > Hold X",
 		"skip_2": 27,
 		"other_manip_2": "",
-		"globaldamage": "Q = 50 // S = 105"
+		"globaldamage_q": 50,
+		"globaldamage_s": 105
 	},
 	{
 		"index": 121,
@@ -1643,12 +1766,13 @@
 		"hp1": "113 (3)",
 		"hp2": "118 (2)",
 		"hp3": "",
-		"manip_1": "SQ18 > QQ24 > S ATB > S Thunder",
+		"manip_1": "SQ18 > QQ24 > ATB to S > S Thunder",
 		"skip_1": 26,
 		"manip_2": "SS36 > Hold X",
 		"skip_2": 27,
 		"other_manip_2": "",
-		"globaldamage": "Q = 42 // S = 78"
+		"globaldamage_q": 42,
+		"globaldamage_s": 78
 	},
 	{
 		"index": 122,
@@ -1661,7 +1785,8 @@
 		"manip_2": "SS54 > Hold X",
 		"skip_2": 27,
 		"other_manip_2": "",
-		"globaldamage": "Q = 50 // S = 105"
+		"globaldamage_q": 50,
+		"globaldamage_s": 105
 	},
 	{
 		"index": 123,
@@ -1674,7 +1799,8 @@
 		"manip_2": "SS27 > S Thunder",
 		"skip_2": 27,
 		"other_manip_2": "",
-		"globaldamage": "Q = 42 // S = 68"
+		"globaldamage_q": 42,
+		"globaldamage_s": 68
 	},
 	{
 		"index": 124,
@@ -1682,12 +1808,13 @@
 		"hp1": "113 (3)",
 		"hp2": "118 (2)",
 		"hp3": "",
-		"manip_1": "SQ24 > S ATB > S Thunder",
+		"manip_1": "SQ24 > ATB to S > S Thunder",
 		"skip_1": 26,
 		"manip_2": "SS27 > S Thunder",
 		"skip_2": 27,
 		"other_manip_2": "",
-		"globaldamage": "Q = 50 // S = 51"
+		"globaldamage_q": 50,
+		"globaldamage_s": 51
 	},
 	{
 		"index": 125,
@@ -1700,7 +1827,8 @@
 		"manip_2": "SS27 > S Thunder",
 		"skip_2": 27,
 		"other_manip_2": "",
-		"globaldamage": "Q = 50 // S = 51"
+		"globaldamage_q": 50,
+		"globaldamage_s": 51
 	},
 	{
 		"index": 126,
@@ -1708,12 +1836,13 @@
 		"hp1": "113 (3)",
 		"hp2": "118 (2)",
 		"hp3": "",
-		"manip_1": "SQ17 > S ATB > S Thunder",
+		"manip_1": "SQ17 > ATB to S > S Thunder",
 		"skip_1": 26,
 		"manip_2": "SS18 > S Thunder",
 		"skip_2": 27,
 		"other_manip_2": "",
-		"globaldamage": "Q = 43 // S = 35"
+		"globaldamage_q": 43,
+		"globaldamage_s": 35
 	},
 	{
 		"index": 127,
@@ -1721,12 +1850,13 @@
 		"hp1": "113 (3)",
 		"hp2": "118 (2)",
 		"hp3": "",
-		"manip_1": "SQ24 > S ATB > S Thunder",
+		"manip_1": "SQ24 > ATB to S > S Thunder",
 		"skip_1": 26,
 		"manip_2": "SS27 > S Thunder",
 		"skip_2": 27,
 		"other_manip_2": "",
-		"globaldamage": "Q = 50 // S = 51"
+		"globaldamage_q": 50,
+		"globaldamage_s": 51
 	},
 	{
 		"index": 128,
@@ -1739,7 +1869,8 @@
 		"manip_2": "SS36 > Hold X",
 		"skip_2": 27,
 		"other_manip_2": "",
-		"globaldamage": "Q = 35 // S = 53"
+		"globaldamage_q": 35,
+		"globaldamage_s": 53
 	},
 	{
 		"index": 129,
@@ -1752,7 +1883,8 @@
 		"manip_2": "SS54 > Hold X",
 		"skip_2": 27,
 		"other_manip_2": "",
-		"globaldamage": "Q = 50 // S = 78"
+		"globaldamage_q": 50,
+		"globaldamage_s": 78
 	},
 	{
 		"index": 130,
@@ -1765,7 +1897,8 @@
 		"manip_2": "SS18 > S Thunder",
 		"skip_2": 27,
 		"other_manip_2": "",
-		"globaldamage": "Q = 16 // S = 56"
+		"globaldamage_q": 16,
+		"globaldamage_s": 56
 	},
 	{
 		"index": 131,
@@ -1778,7 +1911,8 @@
 		"manip_2": "SS36 > Hold X",
 		"skip_2": 27,
 		"other_manip_2": "",
-		"globaldamage": "Q = 51 // S = 82"
+		"globaldamage_q": 51,
+		"globaldamage_s": 82
 	},
 	{
 		"index": 132,
@@ -1786,12 +1920,13 @@
 		"hp1": "113 (3)",
 		"hp2": "118 (2)",
 		"hp3": "",
-		"manip_1": "SS19 > S ATB > S Thunder",
+		"manip_1": "SS19 > ATB to S > S Thunder",
 		"skip_1": 21,
 		"manip_2": "SS18 > S Thunder",
 		"skip_2": 27,
 		"other_manip_2": "",
-		"globaldamage": "Q = 16 // S = 55"
+		"globaldamage_q": 16,
+		"globaldamage_s": 55
 	},
 	{
 		"index": 133,
@@ -1804,7 +1939,8 @@
 		"manip_2": "SS18 > S Thunder",
 		"skip_2": 27,
 		"other_manip_2": "",
-		"globaldamage": "Q = 53 // S = 37"
+		"globaldamage_q": 53,
+		"globaldamage_s": 37
 	},
 	{
 		"index": 134,
@@ -1812,12 +1948,13 @@
 		"hp1": "113 (3)",
 		"hp2": "118 (2)",
 		"hp3": "",
-		"manip_1": "QS19 > S ATB > S Thunder",
+		"manip_1": "QS19 > ATB to S > S Thunder",
 		"skip_1": 21,
 		"manip_2": "SS36 > Hold X",
 		"skip_2": 27,
 		"other_manip_2": "",
-		"globaldamage": "Q = 35 // S = 55"
+		"globaldamage_q": 35,
+		"globaldamage_s": 55
 	},
 	{
 		"index": 135,
@@ -1830,7 +1967,8 @@
 		"manip_2": "SS18 > S Thunder",
 		"skip_2": 27,
 		"other_manip_2": "",
-		"globaldamage": "Q = 35 // S = 37"
+		"globaldamage_q": 35,
+		"globaldamage_s": 37
 	},
 	{
 		"index": 136,
@@ -1843,7 +1981,8 @@
 		"manip_2": "SS18 > S Thunder",
 		"skip_2": 27,
 		"other_manip_2": "",
-		"globaldamage": "Q = 34 // S = 37"
+		"globaldamage_q": 34,
+		"globaldamage_s": 37
 	},
 	{
 		"index": 137,
@@ -1851,12 +1990,13 @@
 		"hp1": "113 (3)",
 		"hp2": "118 (2)",
 		"hp3": "",
-		"manip_1": "QQ18 > S ATB > S Thunder",
+		"manip_1": "QQ18 > ATB to S > S Thunder",
 		"skip_1": 13,
 		"manip_2": "SS54 > Hold X",
 		"skip_2": 27,
 		"other_manip_2": "",
-		"globaldamage": "Q = 34 // S = 81"
+		"globaldamage_q": 34,
+		"globaldamage_s": 81
 	},
 	{
 		"index": 138,
@@ -1869,7 +2009,8 @@
 		"manip_2": "SS36 > Hold X",
 		"skip_2": 27,
 		"other_manip_2": "",
-		"globaldamage": "Q = 16 // S = 55"
+		"globaldamage_q": 16,
+		"globaldamage_s": 55
 	},
 	{
 		"index": 139,
@@ -1877,12 +2018,13 @@
 		"hp1": "113 (3)",
 		"hp2": "118 (2)",
 		"hp3": "",
-		"manip_1": "SQ27 > S ATB > S Thunder",
+		"manip_1": "SQ27 > ATB to S > S Thunder",
 		"skip_1": 13,
 		"manip_2": "SS27 > S Thunder",
 		"skip_2": 27,
 		"other_manip_2": "",
-		"globaldamage": "Q = 51 // S = 54"
+		"globaldamage_q": 51,
+		"globaldamage_s": 54
 	},
 	{
 		"index": 140,
@@ -1895,7 +2037,8 @@
 		"manip_2": "SS54 > Hold X",
 		"skip_2": 27,
 		"other_manip_2": "",
-		"globaldamage": "Q = 35 // S = 81"
+		"globaldamage_q": 35,
+		"globaldamage_s": 81
 	},
 	{
 		"index": 141,
@@ -1908,7 +2051,8 @@
 		"manip_2": "SS54 > Hold X",
 		"skip_2": 27,
 		"other_manip_2": "",
-		"globaldamage": "Q = 24 // S = 81"
+		"globaldamage_q": 24,
+		"globaldamage_s": 81
 	},
 	{
 		"index": 142,
@@ -1921,7 +2065,8 @@
 		"manip_2": "SS18 > S Thunder",
 		"skip_2": 27,
 		"other_manip_2": "",
-		"globaldamage": "Q = 44 // S = 37"
+		"globaldamage_q": 44,
+		"globaldamage_s": 37
 	},
 	{
 		"index": 143,
@@ -1929,12 +2074,13 @@
 		"hp1": "113 (3)",
 		"hp2": "118 (2)",
 		"hp3": "",
-		"manip_1": "SQ24 > S ATB > S Thunder",
+		"manip_1": "SQ24 > ATB to S > S Thunder",
 		"skip_1": 7,
 		"manip_2": "SS27 > S Thunder",
 		"skip_2": 27,
 		"other_manip_2": "",
-		"globaldamage": "Q = 51 // S = 54"
+		"globaldamage_q": 51,
+		"globaldamage_s": 54
 	},
 	{
 		"index": 144,
@@ -1947,7 +2093,8 @@
 		"manip_2": "SS18 > S Thunder",
 		"skip_2": 27,
 		"other_manip_2": "",
-		"globaldamage": "Q = 35 // S = 37"
+		"globaldamage_q": 35,
+		"globaldamage_s": 37
 	},
 	{
 		"index": 145,
@@ -1960,7 +2107,8 @@
 		"manip_2": "SS27 > S Thunder",
 		"skip_2": 27,
 		"other_manip_2": "",
-		"globaldamage": "Q = 51 // S = 54"
+		"globaldamage_q": 51,
+		"globaldamage_s": 54
 	},
 	{
 		"index": 146,
@@ -1973,7 +2121,8 @@
 		"manip_2": "SS36 > Hold X",
 		"skip_2": 27,
 		"other_manip_2": "",
-		"globaldamage": "Q = 35 // S = 55"
+		"globaldamage_q": 35,
+		"globaldamage_s": 55
 	},
 	{
 		"index": 147,
@@ -1981,12 +2130,13 @@
 		"hp1": "113 (3)",
 		"hp2": "118 (2)",
 		"hp3": "",
-		"manip_1": "QQ24 > S ATB > S Thunder",
+		"manip_1": "QQ24 > ATB to S > S Thunder",
 		"skip_1": 7,
 		"manip_2": "SS18 > S Thunder",
 		"skip_2": 27,
 		"other_manip_2": "",
-		"globaldamage": "Q = 42 // S = 51"
+		"globaldamage_q": 42,
+		"globaldamage_s": 51
 	},
 	{
 		"index": 148,
@@ -1999,7 +2149,8 @@
 		"manip_2": "SS36 > Hold X",
 		"skip_2": 27,
 		"other_manip_2": "",
-		"globaldamage": "Q = 35 // S = 54"
+		"globaldamage_q": 35,
+		"globaldamage_s": 54
 	},
 	{
 		"index": 149,
@@ -2012,7 +2163,8 @@
 		"manip_2": "SS18 > S Thunder",
 		"skip_2": 27,
 		"other_manip_2": "",
-		"globaldamage": "Q = 52 // S = 18"
+		"globaldamage_q": 52,
+		"globaldamage_s": 18
 	},
 	{
 		"index": 150,
@@ -2020,12 +2172,13 @@
 		"hp1": "118 (2)",
 		"hp2": "157 (3)",
 		"hp3": "",
-		"manip_1": "QS18 > QS18 > S ATB > S Thunder",
+		"manip_1": "QS18 > QS18 > ATB to S > S Thunder",
 		"skip_1": 32,
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 4,
 		"other_manip_2": "",
-		"globaldamage": "Q = 44 // S = 36"
+		"globaldamage_q": 44,
+		"globaldamage_s": 36
 	},
 	{
 		"index": 151,
@@ -2038,7 +2191,8 @@
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 4,
 		"other_manip_2": "",
-		"globaldamage": "Q = 44 // S = 36"
+		"globaldamage_q": 44,
+		"globaldamage_s": 36
 	},
 	{
 		"index": 152,
@@ -2051,7 +2205,8 @@
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 5,
 		"other_manip_2": "",
-		"globaldamage": "Q = 44 // S = 36"
+		"globaldamage_q": 44,
+		"globaldamage_s": 36
 	},
 	{
 		"index": 153,
@@ -2064,7 +2219,8 @@
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 4,
 		"other_manip_2": "",
-		"globaldamage": "Q = 42 // S = 52"
+		"globaldamage_q": 42,
+		"globaldamage_s": 52
 	},
 	{
 		"index": 154,
@@ -2072,12 +2228,13 @@
 		"hp1": "118 (2)",
 		"hp2": "157 (3)",
 		"hp3": "",
-		"manip_1": "QS18 > QS18 > S ATB > S Thunder",
+		"manip_1": "QS18 > QS18 > ATB to S > S Thunder",
 		"skip_1": 32,
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 5,
 		"other_manip_2": "",
-		"globaldamage": "Q = 35 // S = 36"
+		"globaldamage_q": 35,
+		"globaldamage_s": 36
 	},
 	{
 		"index": 155,
@@ -2090,7 +2247,8 @@
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 5,
 		"other_manip_2": "",
-		"globaldamage": "Q = 35 // S = 36"
+		"globaldamage_q": 35,
+		"globaldamage_s": 36
 	},
 	{
 		"index": 156,
@@ -2103,7 +2261,8 @@
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 4,
 		"other_manip_2": "",
-		"globaldamage": "Q = 35 // S = 36"
+		"globaldamage_q": 35,
+		"globaldamage_s": 36
 	},
 	{
 		"index": 157,
@@ -2116,7 +2275,8 @@
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 5,
 		"other_manip_2": "",
-		"globaldamage": "Q = 24 // S = 78"
+		"globaldamage_q": 24,
+		"globaldamage_s": 78
 	},
 	{
 		"index": 158,
@@ -2124,12 +2284,13 @@
 		"hp1": "118 (2)",
 		"hp2": "157 (3)",
 		"hp3": "",
-		"manip_1": "SS26 > SS26 > S ATB > S Thunder",
+		"manip_1": "SS26 > SS26 > ATB to S > S Thunder",
 		"skip_1": 32,
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 5,
 		"other_manip_2": "",
-		"globaldamage": "Q = 40 // S = 52"
+		"globaldamage_q": 40,
+		"globaldamage_s": 52
 	},
 	{
 		"index": 159,
@@ -2137,12 +2298,13 @@
 		"hp1": "118 (2)",
 		"hp2": "157 (3)",
 		"hp3": "",
-		"manip_1": "SS17 > QS26 > S ATB > S Thunder",
+		"manip_1": "SS17 > QS26 > ATB to S > S Thunder",
 		"skip_1": 32,
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 4,
 		"other_manip_2": "",
-		"globaldamage": "Q = 50 // S = 43"
+		"globaldamage_q": 50,
+		"globaldamage_s": 43
 	},
 	{
 		"index": 160,
@@ -2155,7 +2317,8 @@
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 5,
 		"other_manip_2": "",
-		"globaldamage": "Q = 51 // S = 106"
+		"globaldamage_q": 51,
+		"globaldamage_s": 106
 	},
 	{
 		"index": 161,
@@ -2163,12 +2326,13 @@
 		"hp1": "118 (2)",
 		"hp2": "157 (3)",
 		"hp3": "",
-		"manip_1": "QS18 > S ATB > S Thunder",
+		"manip_1": "QS18 > ATB to S > S Thunder",
 		"skip_1": 32,
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 4,
 		"other_manip_2": "",
-		"globaldamage": "Q = 17 // S = 36"
+		"globaldamage_q": 17,
+		"globaldamage_s": 36
 	},
 	{
 		"index": 162,
@@ -2176,12 +2340,13 @@
 		"hp1": "118 (2)",
 		"hp2": "157 (3)",
 		"hp3": "",
-		"manip_1": "QS26 > SS54 > S ATB > S Thunder",
+		"manip_1": "QS26 > SS54 > ATB to S > S Thunder",
 		"skip_1": 27,
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 5,
 		"other_manip_2": "",
-		"globaldamage": "Q = 24 // S = 106"
+		"globaldamage_q": 24,
+		"globaldamage_s": 106
 	},
 	{
 		"index": 163,
@@ -2194,7 +2359,8 @@
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 5,
 		"other_manip_2": "",
-		"globaldamage": "Q = 51 // S = 106"
+		"globaldamage_q": 51,
+		"globaldamage_s": 106
 	},
 	{
 		"index": 164,
@@ -2207,7 +2373,8 @@
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 5,
 		"other_manip_2": "",
-		"globaldamage": "Q = 26 // S = 50"
+		"globaldamage_q": 26,
+		"globaldamage_s": 50
 	},
 	{
 		"index": 165,
@@ -2215,12 +2382,13 @@
 		"hp1": "118 (2)",
 		"hp2": "157 (3)",
 		"hp3": "",
-		"manip_1": "QS26 > S ATB > S Thunder",
+		"manip_1": "QS26 > ATB to S > S Thunder",
 		"skip_1": 32,
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 4,
 		"other_manip_2": "",
-		"globaldamage": "Q = 26 // S = 43"
+		"globaldamage_q": 26,
+		"globaldamage_s": 43
 	},
 	{
 		"index": 166,
@@ -2233,7 +2401,8 @@
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 5,
 		"other_manip_2": "",
-		"globaldamage": "Q = 0 // S = 114"
+		"globaldamage_q": 0,
+		"globaldamage_s": 114
 	},
 	{
 		"index": 167,
@@ -2241,12 +2410,13 @@
 		"hp1": "118 (2)",
 		"hp2": "157 (3)",
 		"hp3": "",
-		"manip_1": "QS36 > SQ27 > S ATB > S Thunder",
+		"manip_1": "QS36 > SQ27 > ATB to S > S Thunder",
 		"skip_1": 20,
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 5,
 		"other_manip_2": "",
-		"globaldamage": "Q = 27 // S = 88"
+		"globaldamage_q": 27,
+		"globaldamage_s": 88
 	},
 	{
 		"index": 168,
@@ -2259,7 +2429,8 @@
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 5,
 		"other_manip_2": "",
-		"globaldamage": "Q = 0 // S = 90"
+		"globaldamage_q": 0,
+		"globaldamage_s": 90
 	},
 	{
 		"index": 169,
@@ -2267,12 +2438,13 @@
 		"hp1": "118 (2)",
 		"hp2": "157 (3)",
 		"hp3": "",
-		"manip_1": "SS36 > S ATB > S Thunder",
+		"manip_1": "SS36 > ATB to S > S Thunder",
 		"skip_1": 27,
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 5,
 		"other_manip_2": "",
-		"globaldamage": "Q = 26 // S = 54"
+		"globaldamage_q": 26,
+		"globaldamage_s": 54
 	},
 	{
 		"index": 170,
@@ -2285,7 +2457,8 @@
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 5,
 		"other_manip_2": "",
-		"globaldamage": "Q = 0 // S = 96"
+		"globaldamage_q": 0,
+		"globaldamage_s": 96
 	},
 	{
 		"index": 171,
@@ -2298,7 +2471,8 @@
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 4,
 		"other_manip_2": "",
-		"globaldamage": "Q = 36 // S = 51"
+		"globaldamage_q": 36,
+		"globaldamage_s": 51
 	},
 	{
 		"index": 172,
@@ -2306,12 +2480,13 @@
 		"hp1": "118 (2)",
 		"hp2": "157 (3)",
 		"hp3": "",
-		"manip_1": "QQ27 > S ATB > S Thunder",
+		"manip_1": "QQ27 > ATB to S > S Thunder",
 		"skip_1": 20,
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 4,
 		"other_manip_2": "",
-		"globaldamage": "Q = 27 // S = 50"
+		"globaldamage_q": 27,
+		"globaldamage_s": 50
 	},
 	{
 		"index": 173,
@@ -2324,7 +2499,8 @@
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 4,
 		"other_manip_2": "",
-		"globaldamage": "Q = 54 // S = 36"
+		"globaldamage_q": 54,
+		"globaldamage_s": 36
 	},
 	{
 		"index": 174,
@@ -2332,12 +2508,13 @@
 		"hp1": "118 (2)",
 		"hp2": "157 (3)",
 		"hp3": "",
-		"manip_1": "QQ27 > S ATB > S Thunder",
+		"manip_1": "QQ27 > ATB to S > S Thunder",
 		"skip_1": 20,
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 4,
 		"other_manip_2": "",
-		"globaldamage": "Q = 53 // S = 54"
+		"globaldamage_q": 53,
+		"globaldamage_s": 54
 	},
 	{
 		"index": 175,
@@ -2345,12 +2522,13 @@
 		"hp1": "118 (2)",
 		"hp2": "157 (3)",
 		"hp3": "",
-		"manip_1": "SQ27 > S ATB > S Thunder",
+		"manip_1": "SQ27 > ATB to S > S Thunder",
 		"skip_1": 20,
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 5,
 		"other_manip_2": "",
-		"globaldamage": "Q = 27 // S = 62"
+		"globaldamage_q": 27,
+		"globaldamage_s": 62
 	},
 	{
 		"index": 176,
@@ -2363,7 +2541,8 @@
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 4,
 		"other_manip_2": "",
-		"globaldamage": "Q = 53 // S = 18"
+		"globaldamage_q": 53,
+		"globaldamage_s": 18
 	},
 	{
 		"index": 177,
@@ -2371,12 +2550,13 @@
 		"hp1": "118 (2)",
 		"hp2": "157 (3)",
 		"hp3": "",
-		"manip_1": "QQ27 > S ATB > S Thunder",
+		"manip_1": "QQ27 > ATB to S > S Thunder",
 		"skip_1": 13,
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 4,
 		"other_manip_2": "",
-		"globaldamage": "Q = 54 // S = 26"
+		"globaldamage_q": 54,
+		"globaldamage_s": 26
 	},
 	{
 		"index": 178,
@@ -2389,7 +2569,8 @@
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 5,
 		"other_manip_2": "",
-		"globaldamage": "Q = 45 // S = 26"
+		"globaldamage_q": 45,
+		"globaldamage_s": 26
 	},
 	{
 		"index": 179,
@@ -2397,12 +2578,13 @@
 		"hp1": "118 (2)",
 		"hp2": "157 (3)",
 		"hp3": "",
-		"manip_1": "QQ27 > S ATB > S Thunder",
+		"manip_1": "QQ27 > ATB to S > S Thunder",
 		"skip_1": 13,
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 4,
 		"other_manip_2": "",
-		"globaldamage": "Q = 54 // S = 26"
+		"globaldamage_q": 54,
+		"globaldamage_s": 26
 	},
 	{
 		"index": 180,
@@ -2410,12 +2592,13 @@
 		"hp1": "118 (2)",
 		"hp2": "157 (3)",
 		"hp3": "",
-		"manip_1": "QQ27 > S ATB > S Thunder",
+		"manip_1": "QQ27 > ATB to S > S Thunder",
 		"skip_1": 13,
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 4,
 		"other_manip_2": "",
-		"globaldamage": "Q = 45 // S = 54"
+		"globaldamage_q": 45,
+		"globaldamage_s": 54
 	},
 	{
 		"index": 181,
@@ -2428,7 +2611,8 @@
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 4,
 		"other_manip_2": "",
-		"globaldamage": "Q = 45 // S = 27"
+		"globaldamage_q": 45,
+		"globaldamage_s": 27
 	},
 	{
 		"index": 182,
@@ -2436,12 +2620,13 @@
 		"hp1": "118 (2)",
 		"hp2": "157 (3)",
 		"hp3": "",
-		"manip_1": "SQ27 > S ATB > S Thunder",
+		"manip_1": "SQ27 > ATB to S > S Thunder",
 		"skip_1": 13,
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 5,
 		"other_manip_2": "",
-		"globaldamage": "Q = 45 // S = 27"
+		"globaldamage_q": 45,
+		"globaldamage_s": 27
 	},
 	{
 		"index": 183,
@@ -2454,7 +2639,8 @@
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 4,
 		"other_manip_2": "",
-		"globaldamage": "Q = 80 // S = 0"
+		"globaldamage_q": 80,
+		"globaldamage_s": 0
 	},
 	{
 		"index": 184,
@@ -2462,12 +2648,13 @@
 		"hp1": "118 (2)",
 		"hp2": "157 (3)",
 		"hp3": "",
-		"manip_1": "SQ25 > S ATB > S Thunder",
+		"manip_1": "SQ25 > ATB to S > S Thunder",
 		"skip_1": 7,
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 5,
 		"other_manip_2": "",
-		"globaldamage": "Q = 79 // S = 0"
+		"globaldamage_q": 79,
+		"globaldamage_s": 0
 	},
 	{
 		"index": 185,
@@ -2480,7 +2667,8 @@
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 5,
 		"other_manip_2": "",
-		"globaldamage": "Q = 62 // S = 0"
+		"globaldamage_q": 62,
+		"globaldamage_s": 0
 	},
 	{
 		"index": 186,
@@ -2493,7 +2681,8 @@
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 4,
 		"other_manip_2": "",
-		"globaldamage": "Q = 79 // S = 0"
+		"globaldamage_q": 79,
+		"globaldamage_s": 0
 	},
 	{
 		"index": 187,
@@ -2501,12 +2690,13 @@
 		"hp1": "118 (2)",
 		"hp2": "157 (3)",
 		"hp3": "",
-		"manip_1": "QQ17 > S ATB > S Thunder",
+		"manip_1": "QQ17 > ATB to S > S Thunder",
 		"skip_1": 7,
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 4,
 		"other_manip_2": "",
-		"globaldamage": "Q = 53 // S = 0"
+		"globaldamage_q": 53,
+		"globaldamage_s": 0
 	},
 	{
 		"index": 188,
@@ -2514,12 +2704,13 @@
 		"hp1": "118 (2)",
 		"hp2": "157 (3)",
 		"hp3": "",
-		"manip_1": "QS26 > S ATB > S Thunder",
+		"manip_1": "QS26 > ATB to S > S Thunder",
 		"skip_1": 1,
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 4,
 		"other_manip_2": "",
-		"globaldamage": "Q = 52 // S = 26"
+		"globaldamage_q": 52,
+		"globaldamage_s": 26
 	},
 	{
 		"index": 189,
@@ -2527,12 +2718,13 @@
 		"hp1": "118 (2)",
 		"hp2": "157 (3)",
 		"hp3": "",
-		"manip_1": "SS18 > S ATB > S Thunder",
+		"manip_1": "SS18 > ATB to S > S Thunder",
 		"skip_1": 1,
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 5,
 		"other_manip_2": "",
-		"globaldamage": "Q = 35 // S = 18"
+		"globaldamage_q": 35,
+		"globaldamage_s": 18
 	},
 	{
 		"index": 190,
@@ -2540,12 +2732,13 @@
 		"hp1": "118 (2)",
 		"hp2": "157 (3)",
 		"hp3": "",
-		"manip_1": "QS18 > S ATB > S Thunder",
+		"manip_1": "QS18 > ATB to S > S Thunder",
 		"skip_1": 1,
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 4,
 		"other_manip_2": "",
-		"globaldamage": "Q = 35 // S = 18"
+		"globaldamage_q": 35,
+		"globaldamage_s": 18
 	},
 	{
 		"index": 191,
@@ -2558,7 +2751,8 @@
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 4,
 		"other_manip_2": "",
-		"globaldamage": "Q = 35 // S = 18"
+		"globaldamage_q": 35,
+		"globaldamage_s": 18
 	},
 	{
 		"index": 192,
@@ -2571,7 +2765,8 @@
 		"manip_2": "SS18 > Hold X for Thunder",
 		"skip_2": 1,
 		"other_manip_2": "",
-		"globaldamage": "Q = 53 // S = 18"
+		"globaldamage_q": 53,
+		"globaldamage_s": 18
 	},
 	{
 		"index": 193,
@@ -2584,7 +2779,8 @@
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 8,
 		"other_manip_2": "",
-		"globaldamage": "Q = 43 // S = 44"
+		"globaldamage_q": 43,
+		"globaldamage_s": 44
 	},
 	{
 		"index": 194,
@@ -2597,7 +2793,8 @@
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 8,
 		"other_manip_2": "",
-		"globaldamage": "Q = 61 // S = 0"
+		"globaldamage_q": 61,
+		"globaldamage_s": 0
 	},
 	{
 		"index": 195,
@@ -2610,7 +2807,8 @@
 		"manip_2": "SS18 > Hold X for Thunder",
 		"skip_2": 1,
 		"other_manip_2": "",
-		"globaldamage": "Q = 53 // S = 18"
+		"globaldamage_q": 53,
+		"globaldamage_s": 18
 	},
 	{
 		"index": 196,
@@ -2623,7 +2821,8 @@
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 8,
 		"other_manip_2": "",
-		"globaldamage": "Q = 52 // S = 54"
+		"globaldamage_q": 52,
+		"globaldamage_s": 54
 	},
 	{
 		"index": 197,
@@ -2636,7 +2835,8 @@
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 8,
 		"other_manip_2": "",
-		"globaldamage": "Q = 43 // S = 18"
+		"globaldamage_q": 43,
+		"globaldamage_s": 18
 	},
 	{
 		"index": 198,
@@ -2644,12 +2844,13 @@
 		"hp1": "157 (3)",
 		"hp2": "151 (2)",
 		"hp3": "",
-		"manip_1": "SQ25 > S ATB > S Thunder",
+		"manip_1": "SQ25 > ATB to S > S Thunder",
 		"skip_1": 10,
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 8,
 		"other_manip_2": "",
-		"globaldamage": "Q = 75 // S = 0"
+		"globaldamage_q": 75,
+		"globaldamage_s": 0
 	},
 	{
 		"index": 199,
@@ -2662,7 +2863,8 @@
 		"manip_2": "SS18 > Hold X for Thunder",
 		"skip_2": 1,
 		"other_manip_2": "",
-		"globaldamage": "Q = 41 // S = 63"
+		"globaldamage_q": 41,
+		"globaldamage_s": 63
 	},
 	{
 		"index": 200,
@@ -2670,12 +2872,13 @@
 		"hp1": "157 (3)",
 		"hp2": "151 (2)",
 		"hp3": "",
-		"manip_1": "QS27 > S ATB > S Thunder",
+		"manip_1": "QS27 > ATB to S > S Thunder",
 		"skip_1": 7,
 		"manip_2": "SS26 > Hold X for Thunder",
 		"skip_2": 1,
 		"other_manip_2": "",
-		"globaldamage": "Q = 25 // S = 79"
+		"globaldamage_q": 25,
+		"globaldamage_s": 79
 	},
 	{
 		"index": 201,
@@ -2688,7 +2891,8 @@
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 7,
 		"other_manip_2": "",
-		"globaldamage": "Q = 52 // S = 36"
+		"globaldamage_q": 52,
+		"globaldamage_s": 36
 	},
 	{
 		"index": 202,
@@ -2696,12 +2900,13 @@
 		"hp1": "157 (3)",
 		"hp2": "151 (2)",
 		"hp3": "",
-		"manip_1": "QQ24 > S ATB > S Thunder",
+		"manip_1": "QQ24 > ATB to S > S Thunder",
 		"skip_1": 1,
 		"manip_2": "SS26 > Hold X for Thunder",
 		"skip_2": 1,
 		"other_manip_2": "",
-		"globaldamage": "Q = 75 // S = 26"
+		"globaldamage_q": 75,
+		"globaldamage_s": 26
 	},
 	{
 		"index": 203,
@@ -2714,7 +2919,8 @@
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 7,
 		"other_manip_2": "",
-		"globaldamage": "Q = 60 // S = 52"
+		"globaldamage_q": 60,
+		"globaldamage_s": 52
 	},
 	{
 		"index": 204,
@@ -2727,7 +2933,8 @@
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 8,
 		"other_manip_2": "",
-		"globaldamage": "Q = 75 // S = 0"
+		"globaldamage_q": 75,
+		"globaldamage_s": 0
 	},
 	{
 		"index": 205,
@@ -2735,12 +2942,13 @@
 		"hp1": "157 (3)",
 		"hp2": "151 (2)",
 		"hp3": "",
-		"manip_1": "QQ24 > S ATB > S Thunder",
+		"manip_1": "QQ24 > ATB to S > S Thunder",
 		"skip_1": 1,
 		"manip_2": "SS26 > Hold X for Thunder",
 		"skip_2": 1,
 		"other_manip_2": "",
-		"globaldamage": "Q = 50 // S = 53"
+		"globaldamage_q": 50,
+		"globaldamage_s": 53
 	},
 	{
 		"index": 206,
@@ -2748,12 +2956,13 @@
 		"hp1": "157 (3)",
 		"hp2": "151 (2)",
 		"hp3": "",
-		"manip_1": "QQ24 > S ATB > S Thunder",
+		"manip_1": "QQ24 > ATB to S > S Thunder",
 		"skip_1": 1,
 		"manip_2": "SS26 > Hold X for Thunder",
 		"skip_2": 1,
 		"other_manip_2": "",
-		"globaldamage": "Q = 50 // S = 50"
+		"globaldamage_q": 50,
+		"globaldamage_s": 50
 	},
 	{
 		"index": 207,
@@ -2766,7 +2975,8 @@
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 8,
 		"other_manip_2": "",
-		"globaldamage": "Q = 43 // S = 17"
+		"globaldamage_q": 43,
+		"globaldamage_s": 17
 	},
 	{
 		"index": 208,
@@ -2774,12 +2984,13 @@
 		"hp1": "151 (2)",
 		"hp2": "61 (3)",
 		"hp3": "",
-		"manip_1": "QS52 > SS27 > S ATB > S Thunder",
+		"manip_1": "QS52 > SS27 > ATB to S > S Thunder",
 		"skip_1": 6,
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 7,
 		"other_manip_2": "",
-		"globaldamage": "Q = 24 // S = 104"
+		"globaldamage_q": 24,
+		"globaldamage_s": 104
 	},
 	{
 		"index": 209,
@@ -2787,12 +2998,13 @@
 		"hp1": "151 (2)",
 		"hp2": "61 (3)",
 		"hp3": "",
-		"manip_1": "SS52 > S ATB > S Thunder",
+		"manip_1": "SS52 > ATB to S > S Thunder",
 		"skip_1": 11,
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 7,
 		"other_manip_2": "",
-		"globaldamage": "Q = 42 // S = 52"
+		"globaldamage_q": 42,
+		"globaldamage_s": 52
 	},
 	{
 		"index": 210,
@@ -2805,7 +3017,8 @@
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 6,
 		"other_manip_2": "",
-		"globaldamage": "Q = 24 // S = 90"
+		"globaldamage_q": 24,
+		"globaldamage_s": 90
 	},
 	{
 		"index": 211,
@@ -2813,12 +3026,13 @@
 		"hp1": "151 (2)",
 		"hp2": "61 (3)",
 		"hp3": "",
-		"manip_1": "SS36 > S ATB > S Thunder",
+		"manip_1": "SS36 > ATB to S > S Thunder",
 		"skip_1": 11,
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 7,
 		"other_manip_2": "",
-		"globaldamage": "Q = 24 // S = 63"
+		"globaldamage_q": 24,
+		"globaldamage_s": 63
 	},
 	{
 		"index": 212,
@@ -2826,12 +3040,13 @@
 		"hp1": "151 (2)",
 		"hp2": "61 (3)",
 		"hp3": "",
-		"manip_1": "SS52 > S ATB > S Thunder",
+		"manip_1": "SS52 > ATB to S > S Thunder",
 		"skip_1": 11,
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 7,
 		"other_manip_2": "",
-		"globaldamage": "Q = 17 // S = 70"
+		"globaldamage_q": 17,
+		"globaldamage_s": 70
 	},
 	{
 		"index": 213,
@@ -2844,7 +3059,8 @@
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 7,
 		"other_manip_2": "",
-		"globaldamage": "Q = 35 // S = 54"
+		"globaldamage_q": 35,
+		"globaldamage_s": 54
 	},
 	{
 		"index": 214,
@@ -2852,12 +3068,13 @@
 		"hp1": "151 (2)",
 		"hp2": "61 (3)",
 		"hp3": "",
-		"manip_1": "QS27 > S ATB > S thunder",
+		"manip_1": "QS27 > ATB to S > S thunder",
 		"skip_1": 6,
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 6,
 		"other_manip_2": "",
-		"globaldamage": "Q = 24 // S = 63"
+		"globaldamage_q": 24,
+		"globaldamage_s": 63
 	},
 	{
 		"index": 215,
@@ -2865,12 +3082,13 @@
 		"hp1": "151 (2)",
 		"hp2": "61 (3)",
 		"hp3": "",
-		"manip_1": "QS18 > S ATB > S Thunder",
+		"manip_1": "QS18 > ATB to S > S Thunder",
 		"skip_1": 6,
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 6,
 		"other_manip_2": "",
-		"globaldamage": "Q = 17 // S = 54"
+		"globaldamage_q": 17,
+		"globaldamage_s": 54
 	},
 	{
 		"index": 216,
@@ -2878,12 +3096,13 @@
 		"hp1": "151 (2)",
 		"hp2": "61 (3)",
 		"hp3": "",
-		"manip_1": "SS18 > S ATB > S Thunder",
+		"manip_1": "SS18 > ATB to S > S Thunder",
 		"skip_1": 6,
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 7,
 		"other_manip_2": "",
-		"globaldamage": "Q = 24 // S = 54"
+		"globaldamage_q": 24,
+		"globaldamage_s": 54
 	},
 	{
 		"index": 217,
@@ -2896,7 +3115,8 @@
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 6,
 		"other_manip_2": "",
-		"globaldamage": "Q = 48 // S = 0"
+		"globaldamage_q": 48,
+		"globaldamage_s": 0
 	},
 	{
 		"index": 218,
@@ -2909,7 +3129,8 @@
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 7,
 		"other_manip_2": "",
-		"globaldamage": "Q = 43 // S = 27"
+		"globaldamage_q": 43,
+		"globaldamage_s": 27
 	},
 	{
 		"index": 219,
@@ -2922,7 +3143,8 @@
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 8,
 		"other_manip_2": "",
-		"globaldamage": "Q = 17 // S = 62"
+		"globaldamage_q": 17,
+		"globaldamage_s": 62
 	},
 	{
 		"index": 220,
@@ -2935,7 +3157,8 @@
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 6,
 		"other_manip_2": "",
-		"globaldamage": "Q = 17 // S = 0"
+		"globaldamage_q": 17,
+		"globaldamage_s": 0
 	},
 	{
 		"index": 221,
@@ -2943,12 +3166,13 @@
 		"hp1": "151 (2)",
 		"hp2": "61 (3)",
 		"hp3": "",
-		"manip_1": "SS18 > S ATB > S Thunder",
+		"manip_1": "SS18 > ATB to S > S Thunder",
 		"skip_1": 1,
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 7,
 		"other_manip_2": "",
-		"globaldamage": "Q = 17 // S = 36"
+		"globaldamage_q": 17,
+		"globaldamage_s": 36
 	},
 	{
 		"index": 222,
@@ -2961,7 +3185,8 @@
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 7,
 		"other_manip_2": "",
-		"globaldamage": "Q = 0 // S = 70"
+		"globaldamage_q": 0,
+		"globaldamage_s": 70
 	},
 	{
 		"index": 223,
@@ -2974,7 +3199,8 @@
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 6,
 		"other_manip_2": "",
-		"globaldamage": "Q = 0 // S = 90"
+		"globaldamage_q": 0,
+		"globaldamage_s": 90
 	},
 	{
 		"index": 224,
@@ -2987,7 +3213,8 @@
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 6,
 		"other_manip_2": "",
-		"globaldamage": "Q = 19 // S = 18"
+		"globaldamage_q": 19,
+		"globaldamage_s": 18
 	},
 	{
 		"index": 225,
@@ -3000,7 +3227,8 @@
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 8,
 		"other_manip_2": "",
-		"globaldamage": "Q = 26 // S = 45"
+		"globaldamage_q": 26,
+		"globaldamage_s": 45
 	},
 	{
 		"index": 226,
@@ -3008,12 +3236,13 @@
 		"hp1": "61 (3)",
 		"hp2": "151 (2)",
 		"hp3": "",
-		"manip_1": "SQ18 > S ATB > S Thunder",
+		"manip_1": "SQ18 > ATB to S > S Thunder",
 		"skip_1": 10,
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 8,
 		"other_manip_2": "",
-		"globaldamage": "Q = 18 // S = 36"
+		"globaldamage_q": 18,
+		"globaldamage_s": 36
 	},
 	{
 		"index": 227,
@@ -3026,7 +3255,8 @@
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 6,
 		"other_manip_2": "",
-		"globaldamage": "Q = 0 // S = 45"
+		"globaldamage_q": 0,
+		"globaldamage_s": 45
 	},
 	{
 		"index": 228,
@@ -3039,7 +3269,8 @@
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 8,
 		"other_manip_2": "",
-		"globaldamage": "Q = 18 // S = 36"
+		"globaldamage_q": 18,
+		"globaldamage_s": 36
 	},
 	{
 		"index": 229,
@@ -3047,12 +3278,13 @@
 		"hp1": "61 (3)",
 		"hp2": "151 (2)",
 		"hp3": "",
-		"manip_1": "QS18 > S ATB > S Thunder",
+		"manip_1": "QS18 > ATB to S > S Thunder",
 		"skip_1": 8,
 		"manip_2": "SQ17 > Hold X for Thunder",
 		"skip_2": 3,
 		"other_manip_2": "",
-		"globaldamage": "Q = 34 // S = 36"
+		"globaldamage_q": 34,
+		"globaldamage_s": 36
 	},
 	{
 		"index": 230,
@@ -3060,12 +3292,13 @@
 		"hp1": "61 (3)",
 		"hp2": "151 (2)",
 		"hp3": "",
-		"manip_1": "QS18 > S ATB > S Thunder",
+		"manip_1": "QS18 > ATB to S > S Thunder",
 		"skip_1": 8,
 		"manip_2": "Hold X for Thunder",
 		"skip_2": 7,
 		"other_manip_2": "",
-		"globaldamage": "Q = 25 // S = 36"
+		"globaldamage_q": 25,
+		"globaldamage_s": 36
 	},
 	{
 		"index": 231,
@@ -3073,12 +3306,13 @@
 		"hp1": "151 (2)",
 		"hp2": "62 (3)",
 		"hp3": "",
-		"manip_1": "SQ17 > S ATB > S Thunder",
+		"manip_1": "SQ17 > ATB to S > S Thunder",
 		"skip_1": 14,
 		"manip_2": "SQ18 > S Thunder",
 		"skip_2": 28,
 		"other_manip_2": "",
-		"globaldamage": "Q = 53 // S = 18"
+		"globaldamage_q": 53,
+		"globaldamage_s": 18
 	},
 	{
 		"index": 232,
@@ -3091,7 +3325,8 @@
 		"manip_2": "SS24 > Hold X for Thunder",
 		"skip_2": 28,
 		"other_manip_2": "",
-		"globaldamage": "Q = 75 // S = 50"
+		"globaldamage_q": 75,
+		"globaldamage_s": 50
 	},
 	{
 		"index": 233,
@@ -3099,12 +3334,13 @@
 		"hp1": "151 (2)",
 		"hp2": "62 (3)",
 		"hp3": "",
-		"manip_1": "SQ25 > S ATB > S Thunder",
+		"manip_1": "SQ25 > ATB to S > S Thunder",
 		"skip_1": 14,
 		"manip_2": "SQ26 > S Thunder",
 		"skip_2": 28,
 		"other_manip_2": "",
-		"globaldamage": "Q = 75 // S = 50"
+		"globaldamage_q": 75,
+		"globaldamage_s": 50
 	},
 	{
 		"index": 234,
@@ -3117,7 +3353,8 @@
 		"manip_2": "SQ18 > S Thunder",
 		"skip_2": 28,
 		"other_manip_2": "",
-		"globaldamage": "Q = 60 // S = 27"
+		"globaldamage_q": 60,
+		"globaldamage_s": 27
 	},
 	{
 		"index": 235,
@@ -3130,7 +3367,8 @@
 		"manip_2": "SQ26 > S Thunder",
 		"skip_2": 28,
 		"other_manip_2": "",
-		"globaldamage": "Q = 76 // S = 24"
+		"globaldamage_q": 76,
+		"globaldamage_s": 24
 	},
 	{
 		"index": 236,
@@ -3143,7 +3381,8 @@
 		"manip_2": "SQ26 > S Thunder",
 		"skip_2": 28,
 		"other_manip_2": "",
-		"globaldamage": "Q = 77 // S = 36"
+		"globaldamage_q": 77,
+		"globaldamage_s": 36
 	},
 	{
 		"index": 237,
@@ -3156,7 +3395,8 @@
 		"manip_2": "SQ26 > S Thunder",
 		"skip_2": 28,
 		"other_manip_2": "",
-		"globaldamage": "Q = 67 // S = 18"
+		"globaldamage_q": 67,
+		"globaldamage_s": 18
 	},
 	{
 		"index": 238,
@@ -3164,12 +3404,13 @@
 		"hp1": "151 (2)",
 		"hp2": "62 (3)",
 		"hp3": "",
-		"manip_1": "QQ17 > S ATB > S thunder",
+		"manip_1": "QQ17 > ATB to S > S thunder",
 		"skip_1": 9,
 		"manip_2": "SS17 > Hold X for Thunder",
 		"skip_2": 28,
 		"other_manip_2": "",
-		"globaldamage": "Q = 52 // S = 17"
+		"globaldamage_q": 52,
+		"globaldamage_s": 17
 	},
 	{
 		"index": 239,
@@ -3182,7 +3423,8 @@
 		"manip_2": "SQ26 > S Thunder",
 		"skip_2": 28,
 		"other_manip_2": "",
-		"globaldamage": "Q = 85 // S = 0"
+		"globaldamage_q": 85,
+		"globaldamage_s": 0
 	},
 	{
 		"index": 240,
@@ -3190,12 +3432,13 @@
 		"hp1": "151 (2)",
 		"hp2": "62 (3)",
 		"hp3": "",
-		"manip_1": "SQ17 > S ATB > S Thunder",
+		"manip_1": "SQ17 > ATB to S > S Thunder",
 		"skip_1": 9,
 		"manip_2": "SQ18 > S Thunder",
 		"skip_2": 28,
 		"other_manip_2": "",
-		"globaldamage": "Q = 52 // S = 18"
+		"globaldamage_q": 52,
+		"globaldamage_s": 18
 	},
 	{
 		"index": 241,
@@ -3208,7 +3451,8 @@
 		"manip_2": "SQ26 > S Thunder",
 		"skip_2": 28,
 		"other_manip_2": "",
-		"globaldamage": "Q = 75 // S = 24"
+		"globaldamage_q": 75,
+		"globaldamage_s": 24
 	},
 	{
 		"index": 242,
@@ -3216,12 +3460,13 @@
 		"hp1": "151 (2)",
 		"hp2": "62 (3)",
 		"hp3": "",
-		"manip_1": "QQ17 > S ATB > S Thunder",
+		"manip_1": "QQ17 > ATB to S > S Thunder",
 		"skip_1": 9,
 		"manip_2": "SS17 > Hold X for Thunder",
 		"skip_2": 28,
 		"other_manip_2": "",
-		"globaldamage": "Q = 51 // S = 17"
+		"globaldamage_q": 51,
+		"globaldamage_s": 17
 	},
 	{
 		"index": 243,
@@ -3234,7 +3479,8 @@
 		"manip_2": "SS24 > Hold X for Thunder",
 		"skip_2": 28,
 		"other_manip_2": "",
-		"globaldamage": "Q = 49 // S = 78"
+		"globaldamage_q": 49,
+		"globaldamage_s": 78
 	},
 	{
 		"index": 244,
@@ -3247,7 +3493,8 @@
 		"manip_2": "SS24 > Hold X for Thunder",
 		"skip_2": 28,
 		"other_manip_2": "",
-		"globaldamage": "Q = 41 // S = 60"
+		"globaldamage_q": 41,
+		"globaldamage_s": 60
 	},
 	{
 		"index": 245,
@@ -3255,12 +3502,13 @@
 		"hp1": "151 (2)",
 		"hp2": "62 (3)",
 		"hp3": "",
-		"manip_1": "QS54 > S ATB > S Thunder",
+		"manip_1": "QS54 > ATB to S > S Thunder",
 		"skip_1": 4,
 		"manip_2": "SS17 > Hold X for Thunder",
 		"skip_2": 28,
 		"other_manip_2": "",
-		"globaldamage": "Q = 42 // S = 71"
+		"globaldamage_q": 42,
+		"globaldamage_s": 71
 	},
 	{
 		"index": 246,
@@ -3268,12 +3516,13 @@
 		"hp1": "151 (2)",
 		"hp2": "62 (3)",
 		"hp3": "",
-		"manip_1": "SS36 > S ATB > S Thunder",
+		"manip_1": "SS36 > ATB to S > S Thunder",
 		"skip_1": 4,
 		"manip_2": "SQ18 > S Thunder",
 		"skip_2": 28,
 		"other_manip_2": "",
-		"globaldamage": "Q = 59 // S = 36"
+		"globaldamage_q": 59,
+		"globaldamage_s": 36
 	},
 	{
 		"index": 247,
@@ -3286,7 +3535,8 @@
 		"manip_2": "SS17 > Hold X for Thunder",
 		"skip_2": 28,
 		"other_manip_2": "",
-		"globaldamage": "Q = 51 // S = 17"
+		"globaldamage_q": 51,
+		"globaldamage_s": 17
 	},
 	{
 		"index": 248,
@@ -3299,7 +3549,8 @@
 		"manip_2": "SQ18 > S Thunder",
 		"skip_2": 28,
 		"other_manip_2": "",
-		"globaldamage": "Q = 69 // S = 0"
+		"globaldamage_q": 69,
+		"globaldamage_s": 0
 	},
 	{
 		"index": 249,
@@ -3307,12 +3558,13 @@
 		"hp1": "151 (2)",
 		"hp2": "62 (3)",
 		"hp3": "",
-		"manip_1": "SS54 > S ATB > S Thunder",
+		"manip_1": "SS54 > ATB to S > S Thunder",
 		"skip_1": 4,
 		"manip_2": "SQ26 > S Thunder",
 		"skip_2": 28,
 		"other_manip_2": "",
-		"globaldamage": "Q = 68 // S = 54"
+		"globaldamage_q": 68,
+		"globaldamage_s": 54
 	},
 	{
 		"index": 250,
@@ -3325,7 +3577,8 @@
 		"manip_2": "SS17 > Hold X for Thunder",
 		"skip_2": 28,
 		"other_manip_2": "",
-		"globaldamage": "Q = 0 // S = 69"
+		"globaldamage_q": 0,
+		"globaldamage_s": 69
 	},
 	{
 		"index": 251,
@@ -3333,13 +3586,14 @@
 		"hp1": "62 (3)",
 		"hp2": "39 (2)",
 		"hp3": "69 (2)",
-		"manip_1": "SQ18 > SS18 > QQ26 > S ATB > S Thunder",
+		"manip_1": "SQ18 > SS18 > QQ26 > ATB to S > S Thunder",
 		"skip_1": 27,
 		"manip_2": "SS19 > Hold X for Thunder",
 		"skip_2": 22,
 		"other_manip_2": "SS19 > Hold X for Thunder",
 		"other_skip_2": "28",
-		"globaldamage": "Q = 44 // S = 123"
+		"globaldamage_q": 44,
+		"globaldamage_s": 123
 	},
 	{
 		"index": 252,
@@ -3352,7 +3606,8 @@
 		"manip_2": "SS24 > Hold X for Thunder",
 		"skip_2": 28,
 		"other_manip_2": "",
-		"globaldamage": "Q = 0 // S = 41"
+		"globaldamage_q": 0,
+		"globaldamage_s": 41
 	},
 	{
 		"index": 253,
@@ -3366,7 +3621,8 @@
 		"skip_2": 21,
 		"other_manip_2": "SS26 > S Thunder",
 		"other_skip_2": "27",
-		"globaldamage": "Q = 44 // S = 104"
+		"globaldamage_q": 44,
+		"globaldamage_s": 104
 	},
 	{
 		"index": 254,
@@ -3380,7 +3636,8 @@
 		"skip_2": 21,
 		"other_manip_2": "SS26 > S Thunder",
 		"other_skip_2": "27",
-		"globaldamage": "Q = 44 // S = 105"
+		"globaldamage_q": 44,
+		"globaldamage_s": 105
 	},
 	{
 		"index": 255,
@@ -3388,12 +3645,13 @@
 		"hp1": "62 (3)",
 		"hp2": "39 (2)",
 		"hp3": "69 (2)",
-		"manip_1": "QQ26 > QS26 > SQ18 > S ATB > S Thunder",
+		"manip_1": "QQ26 > QS26 > SQ18 > ATB to S > S Thunder",
 		"skip_1": 27,
 		"manip_2": "SS18 > S Thunder",
 		"skip_2": 21,
 		"other_manip_2": "SS18 > S Thunder",
 		"other_skip_2": "27",
-		"globaldamage": "Q = 85 // S = 44"
+		"globaldamage_q": 85,
+		"globaldamage_s": 44
 	}
 ]
