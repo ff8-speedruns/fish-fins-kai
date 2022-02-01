@@ -112,8 +112,6 @@ function UpdateIndex(pat) {
 		let hp1 = row.hp1 ? `${row.hp1} (${row.drop1})` : "";
 		let hp2 = row.hp2 ? `${row.hp2} (${row.drop2})` : "";
 		let hp3 = row.hp3 ? `${row.hp3} (${row.drop3})` : "";
-		let damageQ = row.globaldamage_q;
-		let damageS = row.globaldamage_s;
 
 		tableRows += `
                         <tr>
@@ -125,7 +123,6 @@ function UpdateIndex(pat) {
 							<td id="fish2">${manip2}<br /><em class="alt">${manip3}</em></td>
                             <td id="fish2hp">${hp2}<br /><em class="alt">${hp3}</em></td>
                             <td id="fish2atb">${skip2}<br /><sup>(${limitRefreshes2} Limit)</sup><br /><em class="alt">${skip3}</em></td>
-							<td id="dmg">Q: ${damageQ} <br /> S: ${damageS}</td>
                         </tr>
                         `;
 	});
