@@ -93,9 +93,9 @@ function UpdateIndex(pat) {
 		let limitRefreshes3 = 0;
 		if (qhp.value.length > 0) {
 			qCalcHp = parseInt(qhp.value) - row.globaldamage_q;
-			let rngStart1 = row.rng_start_1++;
-			let rngStart2 = row.rng_start_2++;
-			let rngStart3 = row.rng_start_3++;
+			let rngStart1 = row.rng_start_1 + 1;
+			let rngStart2 = row.rng_start_2 + 1;
+			let rngStart3 = row.rng_start_3 + 1;
 			limitRefreshes1 = LimitsBetweenRng(rngStart1, row.rng_end_1, qCalcHp, 501);
 			limitRefreshes2 = LimitsBetweenRng(rngStart2, row.rng_end_2, qCalcHp, 501);
 			limitRefreshes3 = LimitsBetweenRng(rngStart3, row.rng_end_3, qCalcHp, 501);
