@@ -10,6 +10,9 @@
 
 // Patterns from https://docs.google.com/spreadsheets/d/1uqW35D6YmuSPpVp8WxKf35xmbj5BaD93d5-Tt68ZBnI/edit#gid=2051911454
 
+
+// TODO: Add button to swap sizes between limit and refresh.
+
 let VALS, RNG;
 
 // Inputs
@@ -97,26 +100,36 @@ function UpdateIndex(pat) {
 			limitRefreshes3 = LimitsBetweenRng(row.rng_start_3, row.rng_end_3, qCalcHp, 501);
 		}
 
+		// For future ref: https://sebhastian.com/javascript-double-question-mark/
+		let index = row.index;
+		let pattern = row.pattern;
+		let manip1 = row.manip_1 ?? "";
+		let manip2 = row.manip_2 ?? "";
+		let manip3 = row.manip_3 ?? "";
+		let skip1 = row.skip_1 ?? "";
+		let skip2 = row.skip_2 ?? "";
+		let skip3 = row.skip_3 ? `${row.skip_3}<br /><sup>(${limitRefreshes3} Limit)</sup>` : "";
+		let hp1 = row.hp1 ? `${row.hp1} (${row.drop1})` : "";
+		let hp2 = row.hp2 ? `${row.hp2} (${row.drop2})` : "";
+		let hp3 = row.hp3 ? `${row.hp3} (${row.drop3})` : "";
+		let damageQ = row.globaldamage_q;
+		let damageS = row.globaldamage_s;
+
 		tableRows += `
                         <tr>
-                            <th scope="row" id="opening">${row.index}</th>
-                            <td id="pat">${row.pattern}</td>
-                            <td id="fish1">${row.manip_1 ? row.manip_1 : ""}</td>
-                            <td id="fish1hp">${row.hp1 ? `${row.hp1} (${row.drop1})` : ""}</td>
-                            <td id="fish1atb" class="separator">${row.skip_1 ? row.skip_1 : ""}<br /><sup>(${limitRefreshes1} Limit)</sup></td>
-							<td id="fish2">${row.manip_2 ? row.manip_2 : ""}${row.manip_3 ? `<br /> <em class="alt">${row.manip_3}</em>` : ""}</td>
-                            <td id="fish2hp">${row.hp2 ? `${row.hp2} (${row.drop2})` : ""}${row.hp3 ? `<br /> <em class="alt">${row.hp3} (${row.drop3})</em>` : ""}</td>
-                            <td id="fish2atb">${row.skip_2 ? row.skip_2 : ""}<br /><sup>(${limitRefreshes2} Limit)</sup>
-											  ${row.skip_3 ? `<br /> <em class="alt">${row.skip_3}<br /><sup>(${limitRefreshes3} Limit)</sup></em>` : ""}</td>
-							<td id="dmg">Q: ${row.globaldamage_q} <br /> S: ${row.globaldamage_s}</td>
+                            <th scope="row" id="opening">${index}</th>
+                            <td id="pat">${pattern}</td>
+                            <td id="fish1">${manip1}</td>
+                            <td id="fish1hp">${hp1}</td>
+                            <td id="fish1atb" class="separator">${skip1}<br /><sup>(${limitRefreshes1} Limit)</sup></td>
+							<td id="fish2">${manip2}<br /><em class="alt">${manip3}</em></td>
+                            <td id="fish2hp">${hp2}<br /><em class="alt">${hp3}</em></td>
+                            <td id="fish2atb">${skip2}<br /><sup>(${limitRefreshes2} Limit)</sup><br /><em class="alt">${skip3}</em></td>
+							<td id="dmg">Q: ${damageQ} <br /> S: ${damageS}</td>
                         </tr>
                         `;
 	});
 	tbodyRef.innerHTML = tableRows;
-}
-
-function CalculateLimit(qhp, rngStart, rngEnd) {
-	let crisisLevel = CrisisCalculator(1, qhp.value, QUISTIS_MAX_HP, 0, []);
 }
 
 function LimitLevelNumerator(currentHp, maxHp, deadCharacters, statusArray) {
