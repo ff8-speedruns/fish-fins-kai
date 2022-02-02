@@ -80,8 +80,12 @@ function UpdateIndex(pat) {
 
 	idx.forEach((row) => {
 
-		// Manip says RESET if Q HP before battle is lower than Q Global Damage
-		if (qhp.value.length > 0 && (parseInt(qhp.value) - row.globaldamage_q) <= 0) {
+
+		let qHPAfterDamage = (parseInt(qhp.value) - row.globaldamage_q);
+		// Manip says RESET if Q will die (i.e. HP before battle is lower than Q Global Damage)
+		// or if Q hp is above the max hp allowed for the row
+		if (qhp.value.length > 0 && (qHPAfterDamage > row.hp1 || qHPAfterDamage <= 0)) {
+
 			tableRows += `
 			<tr>
 				<th scope="row" id="opening">${row.index}</th>

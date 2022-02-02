@@ -2117,7 +2117,7 @@
 	},
 	{
 		"index": 92,
-		"pattern": "[sa 33%] qa sa QS26 SQ27",
+		"pattern": "qa sa QS26 SQ27 *[sa 33%]*",
 		"hp1": 95,
 		"hp2": 113,
 		"hp3": 24,
@@ -4009,7 +4009,7 @@
 	},
 	{
 		"index": 177,
-		"pattern": "[qa 100% // sa 0%] qa sa QS26 SQ27",
+		"pattern": "qa sa QS26 SQ27 *[qa 100% // sa 0%]*",
 		"hp1": 118,
 		"hp2": 157,
 		"hp3": 0,
