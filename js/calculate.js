@@ -186,6 +186,7 @@ function LimitsBetweenRng(rngStart, rngEnd, currentHp, maxHp) {
 	let numerator = LimitLevelNumerator(currentHp, maxHp, 0, []);
 
 	// Need to map RNG values using Kaivel's explanation.
+	if (rngStart > rngEnd) rngEnd += 256;
 	for (let i = rngStart; i <= rngEnd; i++) {
 		let limitLevel = Math.floor(numerator / (160 + RNG[i]));
 		if (limitLevel > 4) {
