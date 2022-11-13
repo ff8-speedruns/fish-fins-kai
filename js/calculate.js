@@ -84,13 +84,15 @@ function UpdateIndex(pat) {
 		let qHPAfterDamage = (parseInt(qhp.value) - row.globaldamage_q);
 		// Manip says RESET if Q will die (i.e. HP before battle is lower than Q Global Damage)
 		// or if Q hp is above the max hp allowed for the row
+
+		//! Add the info later.
 		if (qhp.value.length > 0 && (qHPAfterDamage > row.hp1 || qHPAfterDamage <= 0)) {
 
 			tableRows += `
 			<tr>
 				<th scope="row" id="opening">${row.index}</th>
 				<td id="pat">${row.pattern}</td>
-				<td id="fish1">RESET</td>
+				<td id="fish1">RESET bc ${(qHPAfterDamage > row.hp1) ? "Q HP too high" : "Q Dead"}</td>
 				<td id="fish1hp"></td>
 				<td id="fish1atb" class="separator"></td>
 				<td id="fish2"></td>
@@ -128,13 +130,23 @@ function UpdateIndex(pat) {
 			let pattern = row.pattern;
 			let manip1 = row.manip_1 ?? "";
 			let manip2 = row.manip_2 ?? "";
-			let manip3 = row.manip_3 ?? "";
 			let skip1 = row.skip_1 ? `<span class="${refreshClass}">${row.skip_1}</span>` : "";
-			let skip2 = row.skip_2 ? `<span class="${refreshClass}">${row.skip_2}</span>` : "";
-			let skip3 = row.skip_3 ? `<span class="${refreshClass}">${row.skip_3}</span><br /><span class="limit ${limitClass}">(${limitRefreshes3} Limit)</span>` : "";
 			let hp1 = row.hp1 ? `${row.hp1} (${row.drop1})` : "";
-			let hp2 = row.hp2 ? `${row.hp2} (${row.drop2})` : "";
-			let hp3 = row.hp3 ? `${row.hp3} (${row.drop3})` : "";
+
+			let phase2 = row.hp2 ? `${row.hp2} (${row.drop2})` : "";
+			let phase2skip = row.skip_2 ? `<span class="${refreshClass}">${row.skip_2}</span><br /><span class="limit ${limitClass}">(${limitRefreshes2} Limit)</span>` : "";
+
+			let phase1Qdamage = row.damage_q1;
+
+			// Calculate Q hp after phase 1
+			let qPhase1HP = (parseInt(qhp.value) - phase1Qdamage);
+
+			// Determine optimal phase 2 strat
+			if(qPhase1HP <= row.hp3) {
+				phase2 = row.hp3 ? `${row.hp3} (${row.drop3})` : "";
+				phase2skip = row.skip_3 ? `<span class="${refreshClass}">${row.skip_3}</span><br /><span class="limit ${limitClass}">(${limitRefreshes3} Limit)</span>` : "";
+				manip2 = row.manip_3;
+			}
 
 			tableRows += `
 			<tr>
@@ -143,9 +155,9 @@ function UpdateIndex(pat) {
 				<td id="fish1">${manip1}</td>
 				<td id="fish1hp">${hp1}</td>
 				<td id="fish1atb" class="separator"><span class="skips">${skip1}</span><br /><span class="limit ${limitClass}">(${limitRefreshes1} Limit)</span></td>
-				<td id="fish2">${manip2}<br /><em class="alt">${manip3}</em></td>
-				<td id="fish2hp">${hp2}<br /><em class="alt">${hp3}</em></td>
-				<td id="fish2atb">${skip2}<br /><span class="limit ${limitClass}">(${limitRefreshes2} Limit)</span><br /><em class="alt">${skip3}</em></td>
+				<td id="fish2">${manip2}</td>
+				<td id="fish2hp">${phase2}</td>
+				<td id="fish2atb">${phase2skip}</td>
 			</tr>
 			`;
 		}
@@ -154,8 +166,8 @@ function UpdateIndex(pat) {
 }
 
 function LimitLevelNumerator(currentHp, maxHp, deadCharacters, statusArray) {
-	let hpMod = Math.floor(2500 * (currentHp / maxHp));
-	let deathBonus = Math.floor(1600 + (deadCharacters * 200));
+	let hpMod = Math.trunc(2500 * (currentHp / maxHp));
+	let deathBonus = Math.trunc(1600 + (deadCharacters * 200));
 
 	// For StatusSum
 	const STATUSES = {
@@ -176,8 +188,15 @@ function LimitLevelNumerator(currentHp, maxHp, deadCharacters, statusArray) {
 		}
 	});
 
-	let statusBonus = Math.floor(10 * statusSum);
+	let statusBonus = Math.trunc(10 * statusSum);
 
+	/**
+	 * console.log(`CurrHP/MaxHP: ${(currentHp / maxHp)}`);
+	 * console.log(`HPModRaw: ${(2500 * (currentHp / maxHp))}`);
+	 * console.log(`Status Bonus: ${statusBonus}`);
+	 * console.log(`+ Death Bonus: ${deathBonus}`);
+	 * console.log(`- hpMod: ${hpMod}`);
+	 */
 	return (statusBonus + deathBonus - hpMod);
 }
 
@@ -188,17 +207,50 @@ function LimitsBetweenRng(rngStart, rngEnd, currentHp, maxHp) {
 	// Need to map RNG values using Kaivel's explanation.
 	if (rngStart > rngEnd) rngEnd += 256;
 	for (let i = rngStart; i <= rngEnd; i++) {
-		let limitLevel = Math.floor(numerator / (160 + RNG[i]));
+
+		// RNG if we go over 256
+		let moduloRngIndex = i % 256;
+
+		let limitLevel = Math.trunc(numerator / (160 + RNG[moduloRngIndex]));
+
+		/**
+		 * console.log(`i: ${i}`);
+		 * console.log(`moduloRngIndex: ${moduloRngIndex}`);
+		 * console.log(`numerator: ${numerator}`);
+		 * console.log(`RNG: ${RNG[moduloRngIndex]}`);
+		 * console.log(`RNGMod: ${(160 + RNG[moduloRngIndex])}`);
+		 * console.log(`limitLevelRaw: ${numerator / (160 + RNG[moduloRngIndex])}`);
+		 * console.log(`limitLevel: ${limitLevel}`);
+		 */
 		if (limitLevel > 4) {
 			numLimits++;
 		}
 	}
-
+	
 	return numLimits;
 }
+
 
 
 // Handling Limit Mode
 limitMode.addEventListener('change', function (e) {
 	Array.from(document.querySelectorAll('.limit')).forEach((el) => el.classList.toggle('sup'));
 });
+
+function tests() {
+	test('index 17', LimitsBetweenRng(37, 56, 15, 501), 15)
+	test('index 201', LimitsBetweenRng(251, 1, 8, 501), 4)
+	test('index 33', LimitsBetweenRng(56, 56, 43, 501), 1)
+	test('index 45b', LimitsBetweenRng(109, 137, -16, 501), 21)
+	test('index 50b', LimitsBetweenRng(109, 137, 0, 501), 20)
+}
+
+function test(name, result, expected) {
+	if (result === expected) {
+		console.log(`%cTest ${name} passed!`, 'color: green');
+	} else {
+		console.log(`%cTest ${name} failed!`, 'color: red');
+		console.log(`Expected: ${expected}`);
+		console.log(`Got: ${result}`);
+	}
+}
