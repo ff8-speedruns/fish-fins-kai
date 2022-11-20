@@ -116,10 +116,10 @@ function UpdateIndex(pat) {
 				<td id="pat">${manipRow.pattern}</td>
 				<td id="fish1">${manipRow.fish1Sequence}</td>
 				<td id="fish1hp">${manipRow.fish1hp} (${manipRow.fish1drop})</td>
-				<td id="fish1atb" class="separator"><span class="${refreshClass}">${manipRow.fish1Refreshes}</span><br /><span class="limit ${limitClass}">(${manipRow.fish1limits} Limit + ${manipRow.fish1refreshesToLastLimit} Refresh)</span></td>
+				<td id="fish1atb" class="separator"><span class="${refreshClass}">${manipRow.fish1Refreshes}</span><br /><span class="limit ${limitClass}">(${manipRow.fish1limits} Limit)</span></td>
 				<td id="fish2">${manipRow.fish2Sequence}</td>
 				<td id="fish2hp">${manipRow.fish2hp} (${manipRow.fish2drop})</td>
-				<td id="fish2atb"><span class="${refreshClass}">${manipRow.fish2Refreshes}</span><br /><span class="limit ${limitClass}">(${manipRow.fish2limits} Limit + ${manipRow.fish2refreshesToLastLimit} Refresh)</span></td>
+				<td id="fish2atb"><span class="${refreshClass}">${manipRow.fish2Refreshes}</span><br /><span class="limit ${limitClass}">(${manipRow.fish2limits} Limit)</span></td>
 			</tr>
 			`;
 		}
@@ -169,7 +169,7 @@ function GenerateRowObject(row) {
 		obj.fish2hp = row.hp2 ?? "?"; // phase2
 		obj.fish2drop = row.drop2 ?? "?"; // phase2
 
-		obj.fish2limits = limitRefreshes2.limits - 1; //limitRefreshes2.limits
+		obj.fish2limits = limitRefreshes2.limits; //limitRefreshes2.limits
 		obj.fish2refreshesToLastLimit = limitRefreshes2.refreshesToLastLimit; //limitRefreshes2.refreshesToLastLimit
 	} else {
 		// Use Skip 3
@@ -178,7 +178,7 @@ function GenerateRowObject(row) {
 		obj.fish2hp = row.hp3 ?? "?"; // phase3
 		obj.fish2drop = row.drop3 ?? "?"; // phase3
 
-		obj.fish2limits = limitRefreshes3.limits - 1; //limitRefreshes3.limits
+		obj.fish2limits = limitRefreshes3.limits; //limitRefreshes3.limits
 		obj.fish2refreshesToLastLimit = limitRefreshes3.refreshesToLastLimit; //limitRefreshes3.refreshesToLastLimit
 	}
 
