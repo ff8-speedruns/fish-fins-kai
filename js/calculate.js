@@ -16,6 +16,7 @@ let VALS, RNG;
 let inputBox = document.getElementById('pattern');
 let qhp = document.getElementById('QHP');
 let limitMode = document.getElementById("limitMode");
+let wavesMode = document.getElementById("wavesMode");
 
 // Outputs
 let index = document.getElementById('index');
@@ -98,9 +99,14 @@ function UpdateIndex(pat) {
 			</tr>
 			`;
 		} else {
-			limitClass = limitMode.checked ? "" : "sup";
-			refreshClass = limitMode.checked ? "sub" : "";
-
+			if (wavesMode.checked) {
+				limitClass = refreshClass = "hide";
+				wavesClass = "";
+			} else {
+				limitClass = limitMode.checked ? "" : "sup";
+				refreshClass = limitMode.checked ? "sub" : "";
+				wavesClass = "hide";
+			}
 			row.manip_1 = row.manip_1.replace(bold, '<b class="satb">$1</b>');
 			row.manip_2 = row.manip_2.replace(bold, '<b class="satb">$1</b>');
 			row.manip_3 = row.manip_3 ? row.manip_3.replace(bold, '<b class="satb">$1</b>') : "";
@@ -116,10 +122,18 @@ function UpdateIndex(pat) {
 				<td id="pat">${manipRow.pattern}</td>
 				<td id="fish1">${manipRow.fish1Sequence}</td>
 				<td id="fish1hp">${manipRow.fish1hp} (${manipRow.fish1drop})</td>
-				<td id="fish1atb" class="separator"><span class="${refreshClass}">${manipRow.fish1Refreshes}</span><br /><span class="limit ${limitClass}">(${manipRow.fish1limits} Limit)</span></td>
+				<td id="fish1atb" class="separator">
+					<span class="${refreshClass}">${manipRow.fish1Refreshes}<br /></span>
+					<span class="limit ${limitClass}">(${manipRow.fish1limits} Limit)</span>
+					<span class="limit ${wavesClass}">${Math.max(manipRow.fish1limits - 1, 0)} Limits + <br />${manipRow.fish1refreshesToLastLimit} Refresh</span>
+					</td>
 				<td id="fish2">${manipRow.fish2Sequence}</td>
 				<td id="fish2hp">${manipRow.fish2hp} (${manipRow.fish2drop})</td>
-				<td id="fish2atb"><span class="${refreshClass}">${manipRow.fish2Refreshes}</span><br /><span class="limit ${limitClass}">(${manipRow.fish2limits} Limit)</span></td>
+				<td id="fish2atb">
+				<span class="${refreshClass}">${manipRow.fish2Refreshes}<br /></span>
+				<span class="limit ${limitClass}">(${manipRow.fish2limits} Limit)</span>
+				<span class="limit ${wavesClass}">${Math.max(manipRow.fish2limits - 1, 0)} Limits + <br />${manipRow.fish2refreshesToLastLimit} Refresh</span>
+				</td>
 			</tr>
 			`;
 		}
@@ -136,14 +150,11 @@ function GenerateRowObject(row) {
 
 	// Set up some RNG variables
 	qCalcHp = qHP - row.globaldamage_q;
-	let rngStart1 = row.rng_start_1 + 1;
-	let rngStart2 = row.rng_start_2 + 1;
-	let rngStart3 = row.rng_start_3 + 1;
 
 	// Calculate limit refreshes.
-	let limitRefreshes1 = LimitsBetweenRng(rngStart1, row.rng_end_1, qCalcHp, 501);
-	let limitRefreshes2 = LimitsBetweenRng(rngStart2, row.rng_end_2, qCalcHp, 501);
-	let limitRefreshes3 = LimitsBetweenRng(rngStart3, row.rng_end_3, qCalcHp, 501);
+	let limitRefreshes1 = LimitsBetweenRng(row.rng_start_1 + 1, row.rng_end_1, qCalcHp, 501);
+	let limitRefreshes2 = LimitsBetweenRng(row.rng_start_2 + 1, row.rng_end_2, qCalcHp, 501);
+	let limitRefreshes3 = LimitsBetweenRng(row.rng_start_3 + 1, row.rng_end_3, qCalcHp, 501);
 
 	// Basic things
 	obj.index = row.index;
@@ -156,7 +167,7 @@ function GenerateRowObject(row) {
 	obj.fish1drop = row.drop1 ?? "?"; // drop1
 
 	obj.fish1limits = limitRefreshes1.limits;
-	obj.fish1refreshesToLastLimit = limitRefreshes1.refreshesToLastLimit;
+	obj.fish1refreshesToLastLimit = limitRefreshes1.limits <= 1 ? obj.fish1Refreshes : limitRefreshes1.refreshesToLastLimit;
 
 	// Calculate damage to Q in phase 1 to determine which phase 2 is displayed
 	let phase1Qdamage = row.damage_q1;
@@ -169,8 +180,8 @@ function GenerateRowObject(row) {
 		obj.fish2hp = row.hp2 ?? "?"; // phase2
 		obj.fish2drop = row.drop2 ?? "?"; // phase2
 
-		obj.fish2limits = limitRefreshes2.limits; //limitRefreshes2.limits
-		obj.fish2refreshesToLastLimit = limitRefreshes2.refreshesToLastLimit; //limitRefreshes2.refreshesToLastLimit
+		obj.fish2limits = limitRefreshes2.limits;
+		obj.fish2refreshesToLastLimit = limitRefreshes2.limits <= 1 ? obj.fish2Refreshes : limitRefreshes2.refreshesToLastLimit;
 	} else {
 		// Use Skip 3
 		obj.fish2Sequence = row.manip_3 ?? "?"; // manip3
@@ -178,8 +189,8 @@ function GenerateRowObject(row) {
 		obj.fish2hp = row.hp3 ?? "?"; // phase3
 		obj.fish2drop = row.drop3 ?? "?"; // phase3
 
-		obj.fish2limits = limitRefreshes3.limits; //limitRefreshes3.limits
-		obj.fish2refreshesToLastLimit = limitRefreshes3.refreshesToLastLimit; //limitRefreshes3.refreshesToLastLimit
+		obj.fish2limits = limitRefreshes3.limits;
+		obj.fish2refreshesToLastLimit = limitRefreshes3.limits <= 1 ? obj.fish2Refreshes : limitRefreshes3.refreshesToLastLimit;
 	}
 
 	return obj;
@@ -221,32 +232,22 @@ function LimitLevelNumerator(currentHp, maxHp, deadCharacters, statusArray) {
 }
 
 function LimitsBetweenRng(rngStart, rngEnd, currentHp, maxHp) {
+	// Waves wants the number of refreshes between the second last limit -> last limit
 	let result = {
-		'limits': 0,
-		'refreshesToLastLimit': 0
-	};
+		limits: 0,
+		refreshesToLastLimit: 0
+	}
+	// An array of limit break refreshes. length = total # of limits. Each index = number of (total) refreshes to get to limit x.
+	let limits = [];
 
 	if (isNaN(parseInt(currentHp))) return result;
 
-	let numLimits = 0;
 	let numerator = LimitLevelNumerator(currentHp, maxHp, 0, []);
-
-	// Waves wants the number of refreshes between the second last limit -> last limit
-	let numRefresh = 0;
-	let resetRefreshes = false;
 
 	// Need to map RNG values using Kaivel's explanation.
 	if (rngStart > rngEnd) rngEnd += 256;
 
 	for (let i = rngStart; i <= rngEnd; i++) {
-		// If we hit a limit in the last iteration, reset the refreshes.
-		if (resetRefreshes) {
-			numRefresh = 0;
-			resetRefreshes = false;
-		}
-
-		numRefresh++;
-
 		// RNG if we go over 256
 		let moduloRngIndex = i % 256;
 
@@ -261,14 +262,21 @@ function LimitsBetweenRng(rngStart, rngEnd, currentHp, maxHp) {
 		 * console.log(`limitLevelRaw: ${numerator / (160 + RNG[moduloRngIndex])}`);
 		 * console.log(`limitLevel: ${limitLevel}`);
 		 */
+
+		// Limit break!
 		if (limitLevel > 4) {
-			numLimits++;
-			resetRefreshes = true;
+			limits.push(i);
 		}
 	}
 
-	result.limits = numLimits;
-	result.refreshesToLastLimit = numRefresh;
+	// Calculations
+	result.limits = limits.length;
+	if (limits.length == 0)
+		result.refreshesToLastLimit = 0;
+	if (limits.length == 1)
+		result.refreshesToLastLimit = limits[0];
+	if (limits.length > 1)
+		result.refreshesToLastLimit = limits[limits.length - 1] - limits[limits.length - 2];
 
 	return result;
 }
@@ -277,15 +285,21 @@ function LimitsBetweenRng(rngStart, rngEnd, currentHp, maxHp) {
 
 // Handling Limit Mode
 limitMode.addEventListener('change', function (e) {
+	wavesMode.checked = false;
 	Array.from(document.querySelectorAll('.limit')).forEach((el) => el.classList.toggle('sup'));
 });
 
+// Handling Waves Mode ("if it's 6 limits to manip, I want it to say 5 limits + X refreshes")
+wavesMode.addEventListener('change', function (e) {
+
+});
+
 function tests() {
-	test('index 17', LimitsBetweenRng(37, 56, 15, 501).limits, 15)
-	test('index 201', LimitsBetweenRng(251, 1, 8, 501).limits, 4)
-	test('index 33', LimitsBetweenRng(56, 56, 43, 501).limits, 1)
-	test('index 45b', LimitsBetweenRng(109, 137, -16, 501).limits, 21)
-	test('index 50b', LimitsBetweenRng(109, 137, 0, 501).limits, 20)
+	test('index 17', LimitsBetweenRng(37, 56, 15, 501).length, 15)
+	test('index 201', LimitsBetweenRng(251, 1, 8, 501).length, 4)
+	test('index 33', LimitsBetweenRng(56, 56, 43, 501).length, 1)
+	test('index 45b', LimitsBetweenRng(109, 137, -16, 501).length, 21)
+	test('index 50b', LimitsBetweenRng(109, 137, 0, 501).length, 20)
 }
 
 function test(name, result, expected) {

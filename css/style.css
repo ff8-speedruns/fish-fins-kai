@@ -40,3 +40,7 @@ body {
 .sup,.sub {
 	font-size: 0.6em;
 }
+
+.hide {
+	display: none;
+}
