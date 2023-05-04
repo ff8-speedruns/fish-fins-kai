@@ -5473,7 +5473,7 @@
 	},
 	{
 		"index": 233,
-		"pattern": "qa SS26 sa QQ18",
+		"pattern": "qa SS26 QQ18 sa",
 		"hp1": 151,
 		"hp2": 62,
 		"hp3": 0,
