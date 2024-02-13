@@ -36,6 +36,7 @@ const QUISTIS_MAX_HP = 501;
 // Initialize & load data
 window.onload = async function () {
 	loadData();
+	wavesMode.checked = true;
 }
 
 async function loadData() {
