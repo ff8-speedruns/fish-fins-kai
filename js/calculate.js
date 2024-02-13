@@ -100,13 +100,13 @@ function UpdateIndex(pat) {
 			</tr>
 			`;
 		} else {
-			if (wavesMode.checked) {
-				limitClass = refreshClass = "hide";
-				wavesClass = "";
-			} else {
+			if (!wavesMode.checked) {
 				limitClass = limitMode.checked ? "" : "sup";
 				refreshClass = limitMode.checked ? "sub" : "";
 				wavesClass = "hide";
+			} else {
+				limitClass = refreshClass = "hide";
+				wavesClass = "";
 			}
 			row.manip_1 = row.manip_1.replace(bold, '<b class="satb">$1</b>');
 			row.manip_2 = row.manip_2.replace(bold, '<b class="satb">$1</b>');
