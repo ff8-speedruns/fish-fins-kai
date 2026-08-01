@@ -1,0 +1,39 @@
+/* Highlight colours carried over from the original stylesheet, with dark-mode
+   variants so they stay readable on the dark background. */
+
+.kai-important {
+  color: #ff0000;
+}
+.kai-atb {
+  color: #d97706;
+}
+.kai-alt {
+  color: #6a0dad;
+}
+.kai-satb {
+  color: #4169e1;
+}
+
+[data-mantine-color-scheme='dark'] .kai-important {
+  color: #ff6b6b;
+}
+[data-mantine-color-scheme='dark'] .kai-atb {
+  color: #ffa500;
+}
+[data-mantine-color-scheme='dark'] .kai-alt {
+  color: #b197fc;
+}
+[data-mantine-color-scheme='dark'] .kai-satb {
+  color: #74c0fc;
+}
+
+.kai-separator {
+  border-right: 1px solid var(--mantine-color-default-border);
+}
+
+.kai-avatar {
+  height: 2rem;
+  width: auto;
+  cursor: pointer;
+  border-radius: var(--mantine-radius-sm);
+}
