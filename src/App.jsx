@@ -225,7 +225,7 @@ export default function App() {
       size="xl"
     >
       <Stack gap="md">
-        <Group align="flex-end" grow>
+        <Group wrap>
           <NumberInput
             label="Pre-fight Q HP"
             placeholder="Quistis HP"
@@ -240,6 +240,7 @@ export default function App() {
             placeholder="Fin pattern"
             value={pattern}
             onChange={(event) => setPattern(event.currentTarget.value)}
+            style={{ flex: 1 }}
           />
         </Group>
 
