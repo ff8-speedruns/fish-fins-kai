@@ -202,6 +202,7 @@ export default function App() {
   // Rows vary in height — manip text wraps at different lengths, and RESET
   // rows are shorter than normal ones — so we estimate up front and let the
   // virtualizer measure each row's real rendered height and adjust.
+  // eslint-disable-next-line react-hooks/incompatible-library
   const virtualizer = useVirtualizer({
     count: results.length,
     getScrollElement: () => scrollRef.current,
