@@ -28,7 +28,7 @@ export function limitLevelNumerator(currentHp, maxHp, deadCharacters = 0, status
 /**
  * Counts limit breaks available across a window of RNG values.
  *
- * Returns the total, plus the refreshes between the last two limits — that is
+ * Returns the total, plus the refreshes between the last two limits - that is
  * what "limits + X refresh" in the display is counting.
  */
 export function limitsBetweenRng(rngStart, rngEnd, currentHp, maxHp) {

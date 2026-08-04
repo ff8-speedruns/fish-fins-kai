@@ -63,8 +63,8 @@ AtbCell.propTypes = {
 
 // Every prop here is a primitive (string/number), destructured out of the
 // buildRow() result rather than passed as a single object, so that a row
-// whose computed values happen to be unchanged between two renders — the
-// common case while typing a pattern with Q HP held steady — correctly skips
+// whose computed values happen to be unchanged between two renders - the
+// common case while typing a pattern with Q HP held steady - correctly skips
 // re-rendering (React.memo's default comparison works on primitive values;
 // buildRow's result object is a new reference every call, which would defeat
 // a comparison done on the whole object).
@@ -199,8 +199,8 @@ export default function App() {
 
   const scrollRef = useRef(null);
 
-  // Rows vary in height — manip text wraps at different lengths, and RESET
-  // rows are shorter than normal ones — so we estimate up front and let the
+  // Rows vary in height - manip text wraps at different lengths, and RESET
+  // rows are shorter than normal ones - so we estimate up front and let the
   // virtualizer measure each row's real rendered height and adjust.
   // eslint-disable-next-line react-hooks/incompatible-library
   const virtualizer = useVirtualizer({
